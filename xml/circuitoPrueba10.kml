@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Tramo><numero>
+0
+</numero><sector>
+1
+</sector><Punto><coordenadas>
+14.764855555555556,47.21995833333334,682.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+1
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.761347222222222,47.21930277777778,690.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+2
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.760977777777779,47.219233333333335,693.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+3
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.760727777777777,47.21950555555556,696.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+4
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.7601,47.220108333333336,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+5
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.759075,47.22109444444445,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+6
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.758386111111111,47.22184722222222,700.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+7
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.757558333333334,47.22278333333333,700.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+8
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.757161111111111,47.22306944444445,702.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+9
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.7575,47.22361111111111,704.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+10
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.75611111111111,47.224722222222226,714.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+11
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.754166666666666,47.226111111111116,742.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+12
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.754061111111112,47.22618055555556,749.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+13
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.754225,47.22627222222222,749.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+14
+</numero><sector>
+ '1'}
+</sector><Punto><coordenadas>
+14.75611111111111,47.22638888888889,749.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+15
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.756944444444445,47.22638888888889,741.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+16
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.759166666666667,47.226111111111116,739.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+17
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.76136111111111,47.22583888888889,727.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+18
+</numero><sector>
+ ''}
+</sector><Punto><coordenadas>
+14.7642,47.22573055555556,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+19
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.764572222222222,47.22565,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+20
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.764722222222222,47.22555555555556,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+21
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.764586111111111,47.225258333333336,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+22
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.764166666666666,47.225,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+23
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.763725,47.22462222222222,724.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+24
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.763055555555555,47.224444444444444,716.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+25
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.762533333333334,47.22434722222222,716.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+26
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.759766666666666,47.224586111111115,722.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+27
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.759444444444444,47.224444444444444,722.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+28
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.759166666666667,47.224444444444444,722.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+29
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.758761111111111,47.22423333333334,711.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+30
+</numero><sector>
+ '2'}
+</sector><Punto><coordenadas>
+14.758638888888889,47.22397222222222,711.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+31
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.758647222222223,47.22371388888889,711.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+32
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.758888888888889,47.22361111111111,711.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+33
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.758758333333333,47.223525,711.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+34
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.759722222222223,47.22222222222222,699.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+35
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.76,47.22222222222222,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+36
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.760558333333334,47.22204166666667,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+37
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.761,47.22211111111111,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+38
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.761388888888888,47.22222222222222,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+39
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.761988888888888,47.22275555555556,698.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+40
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.762777777777778,47.223055555555554,699.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+41
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.76888888888889,47.223055555555554,699.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+42
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.769444444444446,47.223194444444445,697.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+43
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.769722222222223,47.223055555555554,696.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+44
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.770000000000001,47.22277777777778,695.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+45
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.770555555555557,47.22138888888889,689.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+46
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.770636111111111,47.22133055555556,687.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+47
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.770461111111112,47.22120555555556,685.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><Tramo><numero>
+48
+</numero><sector>
+ '3'}
+</sector><Punto><coordenadas>
+14.769891666666668,47.220961111111116,685.0
+</coordenadas><altitudeMode>
+absolute
+</altitudeMode></Punto></Tramo><name>
+Circuito
+</name><Placemark><LineString><extrude>
+1
+</extrude><tessellation>
+1
+</tessellation><coordinates>
+14.764855555555556,47.21995833333334,682.0
+14.761347222222222,47.21930277777778,690.0
+14.760977777777779,47.219233333333335,693.0
+14.760727777777777,47.21950555555556,696.0
+14.7601,47.220108333333336,698.0
+14.759075,47.22109444444445,698.0
+14.758386111111111,47.22184722222222,700.0
+14.757558333333334,47.22278333333333,700.0
+14.757161111111111,47.22306944444445,702.0
+14.7575,47.22361111111111,704.0
+14.75611111111111,47.224722222222226,714.0
+14.754166666666666,47.226111111111116,742.0
+14.754061111111112,47.22618055555556,749.0
+14.754225,47.22627222222222,749.0
+14.75611111111111,47.22638888888889,749.0
+14.756944444444445,47.22638888888889,741.0
+14.759166666666667,47.226111111111116,739.0
+14.76136111111111,47.22583888888889,727.0
+14.7642,47.22573055555556,724.0
+14.764572222222222,47.22565,724.0
+14.764722222222222,47.22555555555556,724.0
+14.764586111111111,47.225258333333336,724.0
+14.764166666666666,47.225,724.0
+14.763725,47.22462222222222,724.0
+14.763055555555555,47.224444444444444,716.0
+14.762533333333334,47.22434722222222,716.0
+14.759766666666666,47.224586111111115,722.0
+14.759444444444444,47.224444444444444,722.0
+14.759166666666667,47.224444444444444,722.0
+14.758761111111111,47.22423333333334,711.0
+14.758638888888889,47.22397222222222,711.0
+14.758647222222223,47.22371388888889,711.0
+14.758888888888889,47.22361111111111,711.0
+14.758758333333333,47.223525,711.0
+14.759722222222223,47.22222222222222,699.0
+14.76,47.22222222222222,698.0
+14.760558333333334,47.22204166666667,698.0
+14.761,47.22211111111111,698.0
+14.761388888888888,47.22222222222222,698.0
+14.761988888888888,47.22275555555556,698.0
+14.762777777777778,47.223055555555554,699.0
+14.76888888888889,47.223055555555554,699.0
+14.769444444444446,47.223194444444445,697.0
+14.769722222222223,47.223055555555554,696.0
+14.770000000000001,47.22277777777778,695.0
+14.770555555555557,47.22138888888889,689.0
+14.770636111111111,47.22133055555556,687.0
+14.770461111111112,47.22120555555556,685.0
+14.769891666666668,47.220961111111116,685.0
+14.764855555555556,47.21995833333334,682.0
+</coordinates><altitudeMode>
+absolute
+</altitudeMode></LineString><Style><LineStyle><color>
+#ff0000ff
+</color><width>
+5
+</width></LineStyle></Style></Placemark></Document></kml>

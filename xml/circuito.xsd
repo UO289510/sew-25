@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/circuito" elementFormDefault="qualified" targetNamespace="http://tempuri.org/circuito" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="caracteristicas" />
+				<xs:element ref="carrera" />
+				<xs:element ref="referencias" />
+				<xs:element ref="galeria" />
+				<xs:element ref="coordenadas" />
+				<xs:element ref="resultados" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="caracteristicas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="1" ref="caracteristica" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="caracteristica">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="nombre" type="xs:string" use="required" />
+					<xs:attribute name="longitud" type="xs:string" use="required" />
+					<xs:attribute name="anchura" type="xs:integer" use="required" />
+					<xs:attribute name="localidad" type="xs:string" use="required" />
+					<xs:attribute name="pais" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="carrera">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="infoCarrera" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="infoCarrera">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="dato" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dato">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="fecha" type="xs:date" use="required" />
+					<xs:attribute name="hora" type="xs:time" use="required" />
+					<xs:attribute name="vueltas" type="xs:integer" use="required" />
+					<xs:attribute name="patrocinador" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="enlace" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="galeria">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="galeria_imagenes" />
+				<xs:element ref="galeria_videos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="galeria_imagenes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="foto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foto">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:string" use="required" />
+					<xs:attribute name="alt" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="galeria_videos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:string" use="required" />
+					<xs:attribute name="type" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="coordenadas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="salida" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="tramo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="salida">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="latitud_inicio" type="xs:string" use="required" />
+					<xs:attribute name="longitud_inicio" type="xs:string" use="required" />
+					<xs:attribute name="altitud_inicio" type="xs:integer" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tramo">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="distancia" type="xs:decimal" use="required" />
+					<xs:attribute name="latitud" type="xs:string" use="required" />
+					<xs:attribute name="longitud" type="xs:string" use="required" />
+					<xs:attribute name="altitud" type="xs:integer" use="required" />
+					<xs:attribute name="sector" type="xs:integer" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="resultados">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ganador" />
+				<xs:element ref="tiempo" />
+				<xs:element ref="primer_puesto" />
+				<xs:element ref="segundo_puesto" />
+				<xs:element ref="tercer_puesto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ganador" type="xs:string" />
+	<xs:element name="tiempo" type="xs:string" />
+	<xs:element name="primer_puesto" type="xs:string" />
+	<xs:element name="segundo_puesto" type="xs:string" />
+	<xs:element name="tercer_puesto" type="xs:string" />
+</xs:schema>

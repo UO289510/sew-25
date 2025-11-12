@@ -1,0 +1,9 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0.5em;
+}
+
+main > h2 {
+    grid-column: 1 / -1; 
+}

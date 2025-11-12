@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+
+<circuito>
+    <caracteristicas>
+        <caracteristica nombre="Red Bull Ring Spielberg"
+            longitud="4326"
+            anchura="13"
+            localidad="Spielberg"
+            pais="Austria"/>
+    </caracteristicas>
+
+    <carrera>
+        <infoCarrera>
+            <dato fecha="17 de agosto 2025"
+            hora="17:00"
+            vueltas="28"
+            patrocinador="Bwin"/>
+        </infoCarrera>
+    </carrera>
+
+    <referencias>
+        <referencia enlace="https://en.wikipedia.org/wiki/Red_Bull_Ring"/>
+        <referencia enlace="https://www.redbullring.com/en/track/red-bull-ring-f1-motogp-track/"/>
+    </referencias>
+
+    <galeria>
+        <galeria_imagenes>
+            <foto src="multimedia/circuito.jpg" alt="circuito"/>
+        </galeria_imagenes>
+
+        <galeria_videos>
+            <video src="multimedia/circuito.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+        </galeria_videos>
+    </galeria>
+
+    <coordenadas>
+        <salida latitud_inicio="47° 13' 11.85'' N"
+        longitud_inicio="14° 45' 53.48'' E"
+        altitud_inicio="682"/>
+
+        <!-- Tramo 1 -->
+        <tramo distancia="278.4"
+                latitud="47° 13' 9.49'' N"
+                longitud="14° 45' 40.85'' E"
+                altitud="690"
+                sector="1"/>
+        
+        <!-- Tramo 2 -->
+        <tramo distancia="29.42"
+                latitud="47° 13' 9.24'' N"
+                longitud="14° 45' 39.52'' E"
+                altitud="693"
+                sector="1"/>
+
+        <!-- Tramo 3 -->
+        <tramo distancia="81.29"
+                        latitud="47° 13' 10.22'' N" 
+                        longitud="14° 45' 38.62'' E" 
+                        altitud="696" 
+                        sector="1"/>
+                
+        <!-- Tramo 4 -->
+        <tramo distancia="134.71" 
+                        latitud="47 13' 12.39'' N" 
+                        longitud="14° 45' 36.36'' E" 
+                        altitud="698" 
+                        sector="1"/>
+        
+        <!-- Tramo 5 -->
+        <tramo distancia="98.24" 
+                        latitud="47° 13' 15.94'' N" 
+                        longitud="14° 45' 32.67'' E" 
+                        altitud="698" 
+                        sector="1"/>
+         
+        <!-- Tramo 6 -->
+        <tramo distancia="122.13" 
+                        latitud="47° 13' 18.65'' N" 
+                        longitud="14° 45' 30.19'' E" 
+                        altitud="700" 
+                        sector="1"/>
+        
+        <!-- Tramo 7 -->
+        <tramo distancia="44.48" 
+                        latitud="47° 13' 22.02'' N" 
+                        longitud="14° 45' 27.21'' E" 
+                        altitud="700" 
+                        sector="1"/>
+                
+        <!-- Tramo 8 -->
+        <tramo distancia="71.11" 
+                        latitud="47° 13' 23.05'' N" 
+                        longitud="14° 45' 25.78'' E" 
+                        altitud="702" 
+                        sector="1"/>
+                
+        <!-- Tramo 9 -->
+        <tramo distancia="156.46" 
+                        latitud="47° 13' 25'' N" 
+                        longitud="14° 45' 27'' E" 
+                        altitud="704" 
+                        sector="1"/>
+        
+        <!-- Tramo 10 -->
+        <tramo distancia="213.35" 
+                        latitud="47° 13' 29'' N" 
+                        longitud="14° 45' 22'' E" 
+                        altitud="714" 
+                        sector="1"/>
+            
+        <!-- Tramo 11 -->
+        <tramo distancia="12.28" 
+                        latitud="47° 13' 34'' N" 
+                        longitud="14° 45' 15'' E" 
+                        altitud="742" 
+                        sector="1"/>
+        
+        <!-- Tramo 12 -->
+        <tramo distancia="17.17" 
+                        latitud="47° 13' 34.25'' N" 
+                        longitud="14° 45' 14.62'' E" 
+                        altitud="749" 
+                        sector="1"/>
+        
+        <!-- Tramo 13 -->
+        <tramo distancia="134.89" 
+                        latitud="47° 13' 34.58'' N" 
+                        longitud="14° 45' 15.21'' E" 
+                        altitud="749" 
+                        sector="1"/>
+                
+        <!-- Tramo 14 -->
+        <tramo distancia="77.88" 
+                        latitud="47° 13' 35'' N" 
+                        longitud="14° 45' 22'' E" 
+                        altitud="749" 
+                        sector="1"/>
+                
+         <!-- Tramo 15 -->               
+        <tramo distancia="164.89" 
+                        latitud="47° 13' 35'' N" 
+                        longitud="14° 45' 25'' E" 
+                        altitud="741" 
+                        sector="2"/>
+                
+        <!-- Tramo 16 -->                
+        <tramo distancia="168.48" 
+                        latitud="47° 13' 34'' N" 
+                        longitud="14° 45' 33'' E" 
+                        altitud="739" 
+                        sector="2"/>
+                
+        <!-- Tramo 17 -->                
+        <tramo distancia="214.22"
+                        latitud="47° 13' 33.02'' N"
+                        longitud="14° 45' 40.90'' E"
+                        altitud="727"
+                        sector="2"/>
+                
+        <!-- Tramo 18 -->                
+        <tramo distancia="27.16" 
+                        latitud="47° 13' 32.63'' N" 
+                        longitud="14° 45' 51.12'' E" 
+                        altitud="724" 
+                        sector=""/>
+                
+        <!-- Tramo 19 -->               
+        <tramo distancia="22.75" 
+                        latitud="47° 13' 32.34'' N" 
+                        longitud="14° 45' 52.46'' E" 
+                        altitud="724" 
+                        sector="2"/>
+                
+        <!-- Tramo 20 -->                
+        <tramo distancia="21.68" 
+                        latitud="47° 13' 32'' N" 
+                        longitud="14° 45' 53'' E" 
+                        altitud="724" 
+                        sector="2"/>
+                
+        <!-- Tramo 21 -->                
+        <tramo distancia="50.76" 
+                        latitud="47° 13' 30.93'' N" 
+                        longitud="14° 45' 52.51'' E" 
+                        altitud="724" 
+                        sector="2"/>
+                
+        <!-- Tramo 22 -->                
+        <tramo distancia="45.55" 
+                        latitud="47° 13' 30'' N" 
+                        longitud="14° 45' 51'' E" 
+                        altitud="724" 
+                        sector="2"/>
+                
+        <!-- Tramo 23 -->                
+        <tramo distancia="55.12" 
+                        latitud="47° 13' 28.64'' N" 
+                        longitud="14° 45' 49.41'' E" 
+                        altitud="724" 
+                        sector="2"/>
+                
+        <!-- Tramo 24 -->                
+        <tramo distancia="40.01" 
+                        latitud="47° 13' 28'' N" 
+                        longitud="14° 45' 47'' E" 
+                        altitud="716" 
+                        sector="2"/>
+              
+        <!-- Tramo 25 -->                
+        <tramo distancia="214.04" 
+                        latitud="47° 13' 27.65'' N" 
+                        longitud="14° 45' 45.12'' E" 
+                        altitud="716" 
+                        sector="2"/>
+                
+        <!-- Tramo 26 -->                
+        <tramo distancia="27.12" 
+                        latitud="47° 13' 28.51'' N" 
+                        longitud="14° 45' 35.16'' E" 
+                        altitud="722" 
+                        sector="2"/>
+         
+        <!-- Tramo 27 -->                
+        <tramo distancia="30.40" 
+                        latitud="47° 13' 28'' N" 
+                        longitud="14° 45' 34'' E" 
+                        altitud="722" 
+                        sector="2"/>
+           
+        <!-- Tramo 28 -->                
+        <tramo distancia="32.95" 
+                        latitud="47° 13' 28'' N" 
+                        longitud="14° 45' 33'' E" 
+                        altitud="722" 
+                        sector="2"/>
+               
+        <!-- Tramo 29 -->                
+        <tramo distancia="31.06" 
+                        latitud="47° 13' 27.24'' N" 
+                        longitud="14° 45' 31.54'' E" 
+                        altitud="711" 
+                        sector="2"/>
+                
+        <!-- Tramo 30 -->                
+        <tramo distancia="27.70" 
+                        latitud="47° 13' 26.3'' N" 
+                        longitud="14° 45' 31.1'' E" 
+                        altitud="711" 
+                        sector="2"/>
+                
+        <!-- Tramo 31 -->                
+        <tramo distancia="22.91" 
+                        latitud="47° 13' 25.37'' N" 
+                        longitud="14° 45' 31.13'' E" 
+                        altitud="711" 
+                        sector="3"/>
+                
+        <!-- Tramo 32 -->                
+        <tramo distancia="154.57" 
+                        latitud="47° 13' 25'' N" 
+                        longitud="14° 45' 32'' E" 
+                        altitud="711" 
+                        sector="3"/>
+        
+        <!-- Tramo 33 -->
+        <tramo distancia="33.58" 
+                        latitud="47° 13' 24.69'' N" 
+                        longitud="14° 45' 31.53'' E" 
+                        altitud="711" 
+                        sector="3"/>
+                
+        <!-- Tramo 34 -->                
+        <tramo distancia="35.61" 
+                        latitud="47° 13' 20'' N" 
+                        longitud="14° 45' 35'' E" 
+                        altitud="699" 
+                        sector="3"/>
+                
+        <!-- Tramo 35 -->                
+        <tramo distancia="34.46" 
+                        latitud="47° 13' 20'' N" 
+                        longitud="14° 45' 36'' E" 
+                        altitud="698" 
+                        sector="3"/>
+                
+        <!-- Tramo 36 -->                
+        <tramo distancia="32.72" 
+                        latitud="47° 13' 19.35'' N" 
+                        longitud="14° 45' 38.01'' E" 
+                        altitud="698" 
+                        sector="3"/>
+                
+        <!-- Tramo 37 -->                
+        <tramo distancia="71.89" 
+                        latitud="47° 13' 19.6'' N" 
+                        longitud="14° 45' 39.6'' E" 
+                        altitud="698" 
+                        sector="3"/>
+        
+        <!-- Tramo 38 -->                
+        <tramo distancia="69.27" 
+                        latitud="47° 13' 20'' N" 
+                        longitud="14° 45' 41'' E" 
+                        altitud="698" 
+                        sector="3"/>
+        
+        <!-- Tramo 39 -->                
+        <tramo distancia="461.25" 
+                        latitud="47° 13' 21.92'' N" 
+                        longitud="14° 45' 43.16'' E" 
+                        altitud="698" 
+                        sector="3"/>
+        
+        <!-- Tramo 40 -->                
+        <tramo distancia="42.04" 
+                        latitud="47° 13' 23'' N" 
+                        longitud="14° 45' 46'' E" 
+                        altitud="699" 
+                        sector="3"/>
+        
+        <!-- Tramo 41 -->                
+        <tramo distancia="35.02" 
+                        latitud="47° 13' 23'' N" 
+                        longitud="14° 46' 8'' E" 
+                        altitud="699" 
+                        sector="3"/>
+        
+        <!-- Tramo 42 -->                
+        <tramo distancia="31.08" 
+                        latitud="47° 13' 23.5'' N" 
+                        longitud="14° 46' 10'' E" 
+                        altitud="697" 
+                        sector="3"/>
+        
+        <!-- Tramo 43 --> 
+        <tramo distancia="157.10" 
+                        latitud="47° 13' 23'' N" 
+                        longitud="14° 46' 11'' E" 
+                        altitud="696" 
+                        sector="3"/>
+        
+        <!-- Tramo 44 -->                
+        <tramo distancia="16.57" 
+                        latitud="47° 13' 22'' N" 
+                        longitud="14° 46' 12'' E" 
+                        altitud="695" 
+                        sector="3"/>
+        
+        <!-- Tramo 45 -->                
+        <tramo distancia="19.00" 
+                        latitud="47° 13' 17'' N" 
+                        longitud="14° 46' 14'' E" 
+                        altitud="689" 
+                        sector="3"/>
+        
+        <!-- Tramo 46 -->                
+        <tramo distancia="50.40" 
+                        latitud="47° 13' 16.79'' N" 
+                        longitud="14° 46' 14.29'' E" 
+                        altitud="687" 
+                        sector="3"/>
+        
+        <!-- Tramo 47 -->                
+        <tramo distancia="52.39" 
+                        latitud="47° 13' 16.34'' N" 
+                        longitud="14° 46' 13.66'' E" 
+                        altitud="685" 
+                        sector="3"/>
+
+        <!-- Tramo 48 -->                
+        <tramo distancia="345.41" 
+                        latitud="47° 13' 15.46'' N" 
+                        longitud="14° 46' 11.61'' E" 
+                        altitud="685" 
+                        sector="3"/>
+                        
+    </coordenadas>
+
+    <resultados>
+        <ganador>Marc Marquez</ganador>
+        <tiempo>42m 11.006s</tiempo>
+        <primer_puesto>Marc Marquez</primer_puesto>
+        <segundo_puesto>Fermin Aldeguer</segundo_puesto>
+        <tercer_puesto>Marco Bezzecchi</tercer_puesto>
+    </resultados>
+
+</circuito>

@@ -4,6 +4,83 @@
 /*Especifidad 001*/
 body {
     font-family: "Century Gothic", sans-serif;
-    color: #575757;
-    background-color: #fff;
+    color: #f1eded;
+    background-color: #424242;
+}
+
+/*Especifidad 001*/
+header{
+    background-color:#232222;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    align-items: center;
+}
+
+/*Especifidad 001*/
+nav{
+   color:rgb(190, 186, 186);
+    font-size:large;
+    /*background-color se hereda de header*/
+}
+
+/* Especifidad 001*/
+h1{
+    color:white;
+    /*background color se hereda de body*/
+}
+
+/* Especifidad 001*/
+nav :link{
+    color:rgb(255, 255, 255);
+    /* background color se hereda de header */
+}
+
+/* Especifidad 011*/
+nav :visited{
+    color:beige;
+    /*background color se hereda de header */
+}
+
+a :visited{
+    color: beige;
+    /*background color se herad de body */
+}
+
+/* Especifidad 010*/
+nav .active{
+    color: black;
+    background-color: white;
+    font-size: x-large;
+}
+
+/* Especifidad 011*/
+p :visited{
+    color:beige;
+    /* background color se hereda de body */
+}
+
+@media screen and (min-width:320px) and (max-width:799px){
+    header,
+    header h1,
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+
+    p:first-of-type{
+        display: none;
+    }
+
+    video,
+    audio {
+        width: 100%;
+        height: auto;
+    }
 }

@@ -1,0 +1,56 @@
+<!ELEMENT circuito (caracteristicas, carrera, referencias, galeria, coordenadas, resultados)>
+<!ELEMENT caracteristicas (caracteristica*)>
+<!ELEMENT caracteristica (#PCDATA)>
+
+<!ELEMENT carrera (infoCarrera)>
+<!ELEMENT infoCarrera (dato+)>
+<!ELEMENT dato (#PCDATA)>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ATTLIST caracteristica nombre CDATA #REQUIRED>
+<!ATTLIST caracteristica longitud CDATA #REQUIRED>
+<!ATTLIST caracteristica anchura CDATA #REQUIRED>
+<!ATTLIST caracteristica localidad CDATA #REQUIRED>
+<!ATTLIST caracteristica pais CDATA #REQUIRED>
+
+<!ATTLIST dato fecha CDATA #REQUIRED>
+<!ATTLIST dato hora CDATA #REQUIRED>
+<!ATTLIST dato vueltas CDATA #REQUIRED>
+<!ATTLIST dato patrocinador CDATA #REQUIRED>
+
+<!ATTLIST referencia enlace CDATA #REQUIRED>
+
+<!ELEMENT galeria (galeria_imagenes, galeria_videos)>
+<!ELEMENT galeria_imagenes (foto+)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ELEMENT galeria_videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!ATTLIST foto src CDATA #REQUIRED>
+<!ATTLIST foto alt CDATA #REQUIRED>
+<!ATTLIST video src CDATA #REQUIRED>
+<!ATTLIST video type CDATA #REQUIRED>
+
+<!ELEMENT coordenadas (salida, tramo*)>
+<!ELEMENT salida (#PCDATA)>
+<!ELEMENT tramo (#PCDATA)>
+
+<!ATTLIST salida latitud_inicio CDATA #REQUIRED>
+<!ATTLIST salida longitud_inicio CDATA #REQUIRED>
+<!ATTLIST salida altitud_inicio CDATA #REQUIRED>
+
+<!ATTLIST tramo distancia CDATA #REQUIRED>
+<!ATTLIST tramo latitud CDATA #REQUIRED>
+<!ATTLIST tramo longitud CDATA #REQUIRED>
+<!ATTLIST tramo altitud CDATA #REQUIRED>
+<!ATTLIST tramo sector CDATA #REQUIRED>
+
+<!ELEMENT resultados (ganador, tiempo, primer_puesto, segundo_puesto, tercer_puesto)>
+<!ELEMENT ganador (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT primer_puesto (#PCDATA)>
+<!ELEMENT segundo_puesto (#PCDATA)>
+<!ELEMENT tercer_puesto (#PCDATA)>
