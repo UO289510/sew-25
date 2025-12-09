@@ -1,44 +1,53 @@
 class Cronometro{
 
+    #tiempo;
+    #inicio;
+    #corriendo;
+
     constructor(){
+        this.#tiempo = 0;
+    }
 
-        this.tiempo = 0;
-
+    cargarBotones(){
+        var botones = document.querySelectorAll("main button");
+        botones[0].addEventListener("click", this.arrancar.bind(this));
+        botones[1].addEventListener("click", this.parar.bind(this));
+        botones[2].addEventListener("click", this.reiniciar.bind(this));
     }
 
     arrancar(){
         try{
-            this.inicio = Temporal.Now.instant();
+            this.#inicio = Temporal.Now.instant();
         }catch(err){
-            this.inicio = new Date();
+            this.#inicio = new Date();
         }
-        this.corriendo = setInterval(this.actualizar.bind(this), 100);
+        this.#corriendo = setInterval(this.#actualizar.bind(this), 100);
     }
 
     
-    actualizar(){
+    #actualizar(){
         
         var ahora;
 
         try{
             ahora = Temporal.Now.instant();
-            this.tiempo = ahora.epochMilliseconds - this.inicio.epochMilliseconds;
+            this.#tiempo = ahora.epochMilliseconds - this.#inicio.epochMilliseconds;
         }catch(err){
             ahora = new Date();
-            this.tiempo = ahora.getTime() - this.inicio.getTime();
+            this.#tiempo = ahora.getTime() - this.#inicio.getTime();
         }
         
-        this.mostrar();
+        this.#mostrar();
     }
 
-    mostrar(){
-        if(typeof this.tiempo !== "number"){
-            this.tiempo = 0;
+    #mostrar(){
+        if(typeof this.#tiempo !== "number"){
+            this.#tiempo = 0;
         }
 
-        var minutos = parseInt(this.tiempo / 60000);
-        var segundos = parseInt(this.tiempo  % 60000 / 1000);
-        var decimas = parseInt(this.tiempo % 1000 / 100);
+        var minutos = parseInt(this.#tiempo / 60000);
+        var segundos = parseInt(this.#tiempo  % 60000 / 1000);
+        var decimas = parseInt(this.#tiempo % 1000 / 100);
     
         var formato = String(minutos).padStart(2, "0") +
         ":" + String(segundos).padStart(2, "0") + ":" + decimas;
@@ -48,12 +57,12 @@ class Cronometro{
     }
 
     parar(){
-        clearInterval(this.corriendo);
+        clearInterval(this.#corriendo);
     }
 
     reiniciar(){
-        clearInterval(this.corriendo);
-        this.tiempo = 0;
+        clearInterval(this.#corriendo);
+        this.#tiempo = 0;
         this.mostrar();
     }
 }

@@ -11,3 +11,40 @@ nav{
     gap: 1em;
 }
 
+@media screen and (min-width:320px) and (max-width:799px){
+    header,
+    header h1,
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+
+    p:first-of-type{
+        display: none;
+    }
+
+    video,
+    audio {
+        width: 100%;
+        height: auto;
+    }
+
+    article h2 + img {
+        width: 100%;
+        height: auto;
+    }
+
+    body>div {
+        width: 500px;
+        height:500px;
+    }
+}
+
+
