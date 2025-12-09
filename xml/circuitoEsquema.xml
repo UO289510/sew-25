@@ -23,8 +23,8 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
     </carrera>
 
     <referencias>
-        <referencia enlace="https://en.wikipedia.org/wiki/Red_Bull_Ring"/>
-        <referencia enlace="https://www.redbullring.com/en/track/red-bull-ring-f1-motogp-track/"/>
+        <referencia enlace="https://en.wikipedia.org/wiki/Red_Bull_Ring" nombre="Wikipedia - Circuito Red Bull Ring"/>
+        <referencia enlace="https://www.redbullring.com/en/track/red-bull-ring-f1-motogp-track/" nombre="MotoGP - Circuito Red Bull Ring"/>
     </referencias>
 
     <galeria>
@@ -40,20 +40,55 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
     <coordenadas>
         <salida latitud_inicio="47° 13' 11.85'' N"
         longitud_inicio="14° 45' 53.48'' E"
-        altitud_inicio="682"/>
+        altitud_inicio="679"/>
+
+        <!-- Inicio.1 -->
+        <tramo distancia="69.60"
+                latitud="47° 13' 11.29'' N"
+                longitud="14° 45' 50.26'' E"
+                altitud="679"
+                sector="1"/>
+
+        <!-- Inicio.2 -->
+        <tramo distancia="64.21"
+                latitud="47° 13' 10.73'' N"
+                longitud="14° 45' 47.33'' E"
+                altitud="681"
+                sector="1"/>
+
+        <!-- Inicio.3 -->
+        <tramo distancia="12.00"
+                latitud="47° 13' 10.62'' N"
+                longitud="14° 45' 46.80'' E"
+                altitud="682"
+                sector="1"/>
+
+        <!-- Inicio.4 -->
+        <tramo distancia="20.48"
+                latitud="47° 13' 10.45'' N"
+                longitud="14° 45' 45.85'' E"
+                altitud="683"
+                sector="1"/>
+
+        <!-- Inicio.5 -->
+        <tramo distancia="66.64"
+                latitud="47° 13' 9.87'' N"
+                longitud="14° 45' 42.79'' E"
+                altitud="687"
+                sector="1"/>
 
         <!-- Tramo 1 -->
-        <tramo distancia="278.4"
+        <tramo distancia="42.96"
                 latitud="47° 13' 9.49'' N"
                 longitud="14° 45' 40.85'' E"
-                altitud="690"
+                altitud="692"
                 sector="1"/>
         
         <!-- Tramo 2 -->
         <tramo distancia="29.42"
                 latitud="47° 13' 9.24'' N"
                 longitud="14° 45' 39.52'' E"
-                altitud="693"
+                altitud="694"
                 sector="1"/>
 
         <!-- Tramo 3 -->
@@ -69,12 +104,19 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
                         longitud="14° 45' 36.36'' E" 
                         altitud="698" 
                         sector="1"/>
+
+        <!-- Tramo 4.1 -->
+        <tramo distancia="134.71" 
+                        latitud="47° 13' 12.93'' N" 
+                        longitud="14° 45' 35.81'' E" 
+                        altitud="699" 
+                        sector="1"/>
         
         <!-- Tramo 5 -->
         <tramo distancia="98.24" 
                         latitud="47° 13' 15.94'' N" 
                         longitud="14° 45' 32.67'' E" 
-                        altitud="698" 
+                        altitud="699" 
                         sector="1"/>
          
         <!-- Tramo 6 -->
@@ -83,25 +125,39 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
                         longitud="14° 45' 30.19'' E" 
                         altitud="700" 
                         sector="1"/>
+
+        <!-- Tramo 6.1 -->
+        <tramo distancia="122.13" 
+                        latitud="47° 13' 21.065'' N" 
+                        longitud="14° 45' 28.066'' E" 
+                        altitud="701" 
+                        sector="1"/>
         
         <!-- Tramo 7 -->
         <tramo distancia="44.48" 
                         latitud="47° 13' 22.02'' N" 
                         longitud="14° 45' 27.21'' E" 
-                        altitud="700" 
+                        altitud="701" 
                         sector="1"/>
                 
         <!-- Tramo 8 -->
         <tramo distancia="71.11" 
                         latitud="47° 13' 23.05'' N" 
                         longitud="14° 45' 25.78'' E" 
-                        altitud="702" 
+                        altitud="703" 
+                        sector="1"/>
+
+        <!-- Tramo 8.1 -->
+        <tramo distancia="71.11" 
+                        latitud="47° 13' 24.006'' N" 
+                        longitud="14° 45' 26.3556'' E" 
+                        altitud="703" 
                         sector="1"/>
                 
         <!-- Tramo 9 -->
         <tramo distancia="156.46" 
-                        latitud="47° 13' 25'' N" 
-                        longitud="14° 45' 27'' E" 
+                        latitud="47° 13' 25.18'' N" 
+                        longitud="14° 45' 26.92'' E" 
                         altitud="704" 
                         sector="1"/>
         
@@ -109,49 +165,56 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
         <tramo distancia="213.35" 
                         latitud="47° 13' 29'' N" 
                         longitud="14° 45' 22'' E" 
-                        altitud="714" 
+                        altitud="713" 
                         sector="1"/>
             
         <!-- Tramo 11 -->
         <tramo distancia="12.28" 
                         latitud="47° 13' 33.852'' N" 
                         longitud="14° 45' 14.7852'' E" 
-                        altitud="742" 
+                        altitud="741" 
                         sector="1"/>
         
         <!-- Tramo 12 -->
         <tramo distancia="17.17" 
                         latitud="47° 13' 34.25'' N" 
                         longitud="14° 45' 14.62'' E" 
-                        altitud="749" 
+                        altitud="744" 
                         sector="1"/>
         
         <!-- Tramo 13 -->
-        <tramo distancia="134.89" 
+        <tramo distancia="90.52" 
                         latitud="47° 13' 34.58'' N" 
                         longitud="14° 45' 15.21'' E" 
-                        altitud="749" 
+                        altitud="745" 
                         sector="1"/>
                 
+        <!-- Tramo 13.1 -->
+        <tramo distancia="55.78" 
+                        latitud="47° 13' 34.91'' N" 
+                        longitud="14° 45' 19.44'' E" 
+                        altitud="746" 
+                        sector="1"/>
+
         <!-- Tramo 14 -->
         <tramo distancia="77.88" 
                         latitud="47° 13' 35'' N" 
                         longitud="14° 45' 22'' E" 
-                        altitud="749" 
+                        altitud="745" 
                         sector="1"/>
                 
          <!-- Tramo 15 -->               
         <tramo distancia="164.89" 
                         latitud="47° 13' 34.86'' N" 
                         longitud="14° 45' 25.26'' E" 
-                        altitud="741" 
+                        altitud="742" 
                         sector="2"/>
                 
         <!-- Tramo 16 -->                
         <tramo distancia="168.48" 
-                        latitud="47° 13' 34'' N" 
-                        longitud="14° 45' 33'' E" 
-                        altitud="739" 
+                        latitud="47° 13' 33.91'' N" 
+                        longitud="14° 45' 32.97'' E" 
+                        altitud="734" 
                         sector="2"/>
                 
         <!-- Tramo 17 -->                
@@ -160,82 +223,124 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
                         longitud="14° 45' 40.90'' E"
                         altitud="727"
                         sector="2"/>
+
+        <!-- Tramo 17.1 -->                
+        <tramo distancia="214.22"
+                        latitud="47° 13' 32.833'' N"
+                        longitud="14° 45' 42.8364'' E"
+                        altitud="726"
+                        sector="2"/>
+
+        <!-- Tramo 17.2 -->                
+        <tramo distancia="214.22"
+                        latitud="47° 13' 32.718'' N"
+                        longitud="14° 45' 46.584'' E"
+                        altitud="722"
+                        sector="2"/>
                 
         <!-- Tramo 18 -->                
         <tramo distancia="27.16" 
                         latitud="47° 13' 32.63'' N" 
                         longitud="14° 45' 51.12'' E" 
-                        altitud="724" 
+                        altitud="717" 
                         sector=""/>
                 
         <!-- Tramo 19 -->               
         <tramo distancia="22.75" 
                         latitud="47° 13' 32.34'' N" 
                         longitud="14° 45' 52.46'' E" 
-                        altitud="724" 
+                        altitud="715" 
                         sector="2"/>
                 
         <!-- Tramo 20 -->                
         <tramo distancia="21.68" 
                         latitud="47° 13' 31.59'' N" 
                         longitud="14° 45' 52.88'' E" 
-                        altitud="724" 
+                        altitud="714" 
                         sector="2"/>
                 
         <!-- Tramo 21 -->                
         <tramo distancia="50.76" 
                         latitud="47° 13' 30.93'' N" 
                         longitud="14° 45' 52.51'' E" 
-                        altitud="724" 
+                        altitud="713" 
                         sector="2"/>
                 
         <!-- Tramo 22 -->                
         <tramo distancia="45.55" 
                         latitud="47° 13' 29.62'' N" 
                         longitud="14° 45' 51.02'' E" 
-                        altitud="724" 
+                        altitud="711" 
                         sector="2"/>
                 
         <!-- Tramo 23 -->                
         <tramo distancia="55.12" 
                         latitud="47° 13' 28.64'' N" 
                         longitud="14° 45' 49.41'' E" 
-                        altitud="724" 
+                        altitud="709" 
                         sector="2"/>
                 
         <!-- Tramo 24 -->                
         <tramo distancia="40.01" 
                         latitud="47° 13' 27.92'' N" 
                         longitud="14° 45' 46.98'' E" 
-                        altitud="716" 
+                        altitud="708" 
                         sector="2"/>
               
         <!-- Tramo 25 -->                
-        <tramo distancia="214.04" 
-                        latitud="47° 13' 27.65'' N" 
-                        longitud="14° 45' 45.12'' E" 
-                        altitud="716" 
+        <tramo distancia="55.16" 
+                        latitud="47° 13' 27.646'' N" 
+                        longitud="14° 45' 45.119'' E" 
+                        altitud="708" 
                         sector="2"/>
                 
+        <!-- Tramo 25.1 -->                
+        <tramo distancia="37.41" 
+                        latitud="47° 13' 27.678'' N" 
+                        longitud="14° 45' 42.494'' E" 
+                        altitud="709" 
+                        sector="2"/>
+
+        <!-- Tramo 25.2 -->                
+        <tramo distancia="60.40" 
+                        latitud="47° 13' 27.89'' N" 
+                        longitud="14° 45' 40.74'' E" 
+                        altitud="710" 
+                        sector="2"/>
+
+        <!-- Tramo 25.3 -->                
+        <tramo distancia="37.09" 
+                        latitud="47° 13' 28.24'' N" 
+                        longitud="14° 45' 37.91'' E" 
+                        altitud="711" 
+                        sector="2"/>
+
+        <!-- Tramo 25.4 -->                
+        <tramo distancia="20.70" 
+                        latitud="47° 13' 28.45'' N" 
+                        longitud="14° 45' 36.16'' E" 
+                        altitud="711" 
+                        sector="2"/>
+
         <!-- Tramo 26 -->                
         <tramo distancia="27.12" 
                         latitud="47° 13' 28.51'' N" 
                         longitud="14° 45' 35.16'' E" 
-                        altitud="722" 
+                        altitud="712" 
                         sector="2"/>
          
         <!-- Tramo 27 -->                
         <tramo distancia="30.40" 
                         latitud="47° 13' 28.46'' N" 
                         longitud="14° 45' 33.90'' E" 
-                        altitud="722" 
+                        altitud="711" 
                         sector="2"/>
            
         <!-- Tramo 28 -->                
         <tramo distancia="32.95" 
                         latitud="47° 13' 28.03'' N" 
                         longitud="14° 45' 32.67'' E" 
-                        altitud="722" 
+                        altitud="711" 
                         sector="2"/>
                
         <!-- Tramo 29 -->                
@@ -246,136 +351,256 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
                         sector="2"/>
                 
         <!-- Tramo 30 -->                
-        <tramo distancia="27.70" 
+        <tramo distancia="14.46" 
                         latitud="47° 13' 26.3'' N" 
                         longitud="14° 45' 31.1'' E" 
-                        altitud="711" 
+                        altitud="708" 
                         sector="2"/>
                 
+        <!-- Tramo 30.1 -->                
+        <tramo distancia="14.16" 
+                        latitud="47° 13' 26'' N" 
+                        longitud="14° 45' 31'' E" 
+                        altitud="708" 
+                        sector="2"/>
+
         <!-- Tramo 31 -->                
         <tramo distancia="22.91" 
                         latitud="47° 13' 25.37'' N" 
                         longitud="14° 45' 31.13'' E" 
-                        altitud="711" 
+                        altitud="705" 
                         sector="3"/>
                 
         <!-- Tramo 32 -->                
-        <tramo distancia="154.57" 
+        <tramo distancia="142.79" 
                         latitud="47° 13' 24.69'' N" 
                         longitud="14° 45' 31.53'' E" 
-                        altitud="711" 
+                        altitud="702" 
                         sector="3"/>
         
+        <!-- Tramo 32.1 -->                
+        <tramo distancia="12.60" 
+                        latitud="47° 13' 20.68'' N" 
+                        longitud="14° 45' 34.88'' E" 
+                        altitud="693" 
+                        sector="3"/>
+
         <!-- Tramo 33 -->
-        <tramo distancia="33.58" 
+        <tramo distancia="19.88" 
                         latitud="47° 13' 20.34'' N" 
                         longitud="14° 45' 35.19'' E" 
-                        altitud="711" 
+                        altitud="692" 
+                        sector="3"/>
+
+        <!-- Tramo 33.1 -->
+        <tramo distancia="13.89" 
+                        latitud="47° 13' 19.91'' N" 
+                        longitud="14° 45' 35.90'' E" 
+                        altitud="692" 
                         sector="3"/>
                 
         <!-- Tramo 34 -->                
         <tramo distancia="35.61" 
                         latitud="47° 13' 19.62'' N" 
                         longitud="14° 45' 36.39'' E" 
-                        altitud="699" 
+                        altitud="692" 
                         sector="3"/>
                 
         <!-- Tramo 35 -->                
-        <tramo distancia="34.46" 
+        <tramo distancia="18.79" 
                         latitud="47° 13' 19.35'' N" 
                         longitud="14° 45' 38.01'' E" 
-                        altitud="698" 
+                        altitud="691" 
                         sector="3"/>
                 
+        <!-- Tramo 35.1 -->                
+        <tramo distancia="16.07" 
+                        latitud="47° 13' 19.37'' N" 
+                        longitud="14° 45' 38.90'' E" 
+                        altitud="691" 
+                        sector="3"/>
+
         <!-- Tramo 36 -->                
         <tramo distancia="32.72" 
                         latitud="47° 13' 19.58'' N" 
                         longitud="14° 45' 39.57'' E" 
-                        altitud="698" 
+                        altitud="691" 
                         sector="3"/>
                 
         <!-- Tramo 37 -->                
-        <tramo distancia="71.89" 
+        <tramo distancia="39.96" 
                         latitud="47° 13' 20.16'' N" 
                         longitud="14° 45' 40.85'' E" 
-                        altitud="698" 
+                        altitud="691" 
                         sector="3"/>
         
+        <!-- Tramo 37.1 -->                
+        <tramo distancia="15.28" 
+                        latitud="47° 13' 21.18'' N" 
+                        longitud="14° 45' 42.02'' E" 
+                        altitud="692" 
+                        sector="3"/>
+
+        <!-- Tramo 37.2 -->                
+        <tramo distancia="17.57" 
+                        latitud="47° 13' 21.54'' N" 
+                        longitud="14° 45' 42.54'' E" 
+                        altitud="694" 
+                        sector="3"/>
+
         <!-- Tramo 38 -->                
-        <tramo distancia="69.27" 
-                        latitud="47° 13' 20'' N" 
-                        longitud="14° 45' 41'' E" 
-                        altitud="698" 
+        <tramo distancia="35.91" 
+                        latitud="47º 13' 21.92'' N" 
+                        longitud="14º 45' 43.16'' E" 
+                        altitud="694" 
+                        sector="3"/>
+
+        <!-- Tramo 38.1 -->                
+        <tramo distancia="32.92" 
+                        latitud="47º 13' 22.52'' N" 
+                        longitud="14º 45' 44.61'' E" 
+                        altitud="694" 
                         sector="3"/>
         
         <!-- Tramo 39 -->                
-        <tramo distancia="461.25" 
-                        latitud="47° 13' 21.92'' N" 
-                        longitud="14° 45' 43.16'' E" 
-                        altitud="698" 
+        <tramo distancia="136.26" 
+                        latitud="47º 13' 22.98'' N" 
+                        longitud="14º 45' 46.02'' E" 
+                        altitud="694" 
+                        sector="3"/>
+
+        <!-- Tramo 39.1 -->                
+        <tramo distancia="102.27" 
+                        latitud="47° 13' 23.22'' N" 
+                        longitud="14° 45' 48.31'' E" 
+                        altitud="694" 
+                        sector="3"/>
+
+        <!-- Tramo 39.2 -->                
+        <tramo distancia="57.32" 
+                        latitud="47º 13' 23.22'' N" 
+                        longitud="14º 45' 52.51'' E" 
+                        altitud="697" 
+                        sector="3"/>
+        
+        <!-- Tramo 39.2.1 -->                
+        <tramo distancia="44.57" 
+                        latitud="47º 13' 23.3'' N" 
+                        longitud="14º 45' 55.2'' E" 
+                        altitud="700" 
+                        sector="3"/>
+
+        <!-- Tramo 39.3 -->                
+        <tramo distancia="61.24" 
+                        latitud="47° 13' 23.34'' N" 
+                        longitud="14° 45' 57.36'' E" 
+                        altitud="701" 
+                        sector="3"/>
+
+         <!-- Tramo 39.3.1 -->                
+        <tramo distancia="49.55" 
+                        latitud="47° 13' 23.347'' N" 
+                        longitud="14° 46' 0.26'' E" 
+                        altitud="702" 
+                        sector="3"/>
+
+        <!-- Tramo 39.4 -->                
+        <tramo distancia="63.54" 
+                        latitud="47º 13' 23.437'' N" 
+                        longitud="14º 46' 2.59'' E" 
+                        altitud="703" 
+                        sector="3"/>
+
+        <!-- Tramo 39.5 -->                
+        <tramo distancia="63.50" 
+                        latitud="47º 13' 23.459'' N" 
+                        longitud="14º 46' 5.556'' E" 
+                        altitud="702" 
                         sector="3"/>
         
         <!-- Tramo 40 -->                
         <tramo distancia="42.04" 
-                        latitud="47° 13' 23'' N" 
-                        longitud="14° 45' 46'' E" 
-                        altitud="699" 
+                        latitud="47º 13' 23.49'' N" 
+                        longitud="14º 46' 7.932'' E" 
+                        altitud="701" 
                         sector="3"/>
         
         <!-- Tramo 41 -->                
         <tramo distancia="35.02" 
-                        latitud="47° 13' 23'' N" 
-                        longitud="14° 46' 8'' E" 
+                        latitud="47° 13' 23.48'' N" 
+                        longitud="14° 46' 9.95'' E" 
                         altitud="699" 
                         sector="3"/>
         
         <!-- Tramo 42 -->                
         <tramo distancia="31.08" 
-                        latitud="47° 13' 23.5'' N" 
-                        longitud="14° 46' 10'' E" 
-                        altitud="697" 
+                        latitud="47º 13' 22.93'' N" 
+                        longitud="14º 46' 11.38'' E" 
+                        altitud="698" 
                         sector="3"/>
         
         <!-- Tramo 43 --> 
-        <tramo distancia="157.10" 
-                        latitud="47° 13' 23'' N" 
-                        longitud="14° 46' 11'' E" 
-                        altitud="696" 
+        <tramo distancia="62.05" 
+                        latitud="47º 13' 22.19'' N" 
+                        longitud="14º 46' 12.14'' E" 
+                        altitud="697" 
                         sector="3"/>
         
+        <!-- Tramo 43.1 --> 
+        <tramo distancia="62.05" 
+                        latitud="47º 13' 20.813'' N" 
+                        longitud="14º 46' 12.767'' E" 
+                        altitud="695" 
+                        sector="3"/>
+
+        <!-- Tramo 43.2 --> 
+        <tramo distancia="96.45" 
+                        latitud="47º 13' 20.3'' N" 
+                        longitud="14º 46' 13.0'' E" 
+                        altitud="693" 
+                        sector="3"/>
+        
+
         <!-- Tramo 44 -->                
         <tramo distancia="16.57" 
                         latitud="47° 13' 17.32'' N" 
                         longitud="14° 46' 14.28'' E" 
-                        altitud="695" 
+                        altitud="686" 
                         sector="3"/>
         
         <!-- Tramo 45 -->                
         <tramo distancia="19.00" 
-                        latitud="47° 13' 17'' N" 
-                        longitud="14° 46' 14'' E" 
-                        altitud="689" 
+                        latitud="47° 13' 16.79'' N" 
+                        longitud="14° 46' 14.29'' E" 
+                        altitud="685" 
                         sector="3"/>
         
         <!-- Tramo 46 -->                
         <tramo distancia="50.40" 
-                        latitud="47° 13' 16.79'' N" 
-                        longitud="14° 46' 14.29'' E" 
-                        altitud="687" 
+                        latitud="47° 13' 16.34'' N" 
+                        longitud="14° 46' 13.66'' E" 
+                        altitud="683" 
                         sector="3"/>
         
         <!-- Tramo 47 -->                
         <tramo distancia="52.39" 
-                        latitud="47° 13' 16.34'' N" 
-                        longitud="14° 46' 13.66'' E" 
-                        altitud="685" 
+                        latitud="47° 13' 15.46'' N" 
+                        longitud="14° 46' 11.61'' E" 
+                        altitud="682" 
                         sector="3"/>
 
         <!-- Tramo 48 -->                
         <tramo distancia="345.41" 
-                        latitud="47° 13' 15.46'' N" 
-                        longitud="14° 46' 11.61'' E" 
-                        altitud="685" 
+                        latitud="47º 13' 14.81'' N" 
+                        longitud="14º 46' 9.35'' E" 
+                        altitud="681" 
+                        sector="3"/>
+        
+        <!-- Tramo 49 -->
+        <tramo distancia="0.0" 
+                        latitud="47° 13' 11.85'' N"
+                        longitud="14° 45' 53.48'' E"
+                        altitud="679"
                         sector="3"/>
                         
     </coordenadas>

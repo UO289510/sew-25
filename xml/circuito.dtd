@@ -21,6 +21,7 @@
 <!ATTLIST dato patrocinador CDATA #REQUIRED>
 
 <!ATTLIST referencia enlace CDATA #REQUIRED>
+<!ATTLIST referencia nombre CDATA #REQUIRED>
 
 <!ELEMENT galeria (galeria_imagenes, galeria_videos)>
 <!ELEMENT galeria_imagenes (foto+)>
