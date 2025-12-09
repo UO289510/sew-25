@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <script src="js/carrusel.js"></script> 
+    <script src="js/noticias.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,16 +25,22 @@
             <a href="piloto.html" title="Información del piloto">Piloto</a>
             <a href="circuito.html" title="Información del circuito">Circuito</a>
             <a href="metereologia.html" title="Información metereologica">Metereología</a>
-            <a href="clasificaciones.html" title="Información de la temporada">Clasificaciones</a>
+            <a href="clasificaciones.php" title="Información de la temporada">Clasificaciones</a>
             <a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>
             <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
+            <a href="cronometro.php" title="Cronometro">Cronometro</a>
         </nav>
     </header>
 
     <p>Estas en <a href="index.html">Inicio</a></p>
 
     <main>
-        <p>En desarrollo</p>
+        <h2>Indice</h2>
+
+        <script>
+            var carrusel = new Carrusel();
+            var noticias = new Noticias();
+        </script>
     </main>
 
 </body>
