@@ -32,14 +32,18 @@ svg {
         margin: 0.5em 0;
     }
 
-    p:first-of-type{
+    body>p:first-of-type{
         display: none;
     }
 
-    video,
-    audio {
+    video {
         width: 100%;
         height: auto;
+    }
+
+    audio {
+        width: 90%;
+        height: 5em;
     }
 
     img {

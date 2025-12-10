@@ -3,15 +3,32 @@
 
 /* Regla con el estilo general para las tarjetas del juego */
 /* especificidad: 002 */
-main article {
-    width: auto;
-    height: 10em;
-    position: relative;
-    transform: scale(1);
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0);
+
+@media screen and (min-width:800px){
+    main article {
+        width: 10em;
+        height: 15em;
+        position: relative;
+        transform: scale(1);
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0);
+    }    
+}
+
+@media screen and (min-width:320px) and (max-width:799px){
+    main article {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        height: auto;
+        position: relative;
+        transform: scale(1);
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0);
+    }
 }
 
 /* Regla con la transformación que permite girar la carta cuando se le pone el atributo personalizado data-estado al valor volteada */
