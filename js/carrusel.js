@@ -39,7 +39,7 @@ class Carrusel {
                 date_taken: content[i].date_taken,
                 description: content[i].description,
                 link: content[i].link,
-                media: content[i].media.m,
+                media: content[i].media.m.replace("_m","_z"),
                 published: content[i].published,
                 tags: content[i].tags,
                 title: content[i].title

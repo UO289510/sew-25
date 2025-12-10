@@ -76,9 +76,17 @@ p :visited{
     /* background color se hereda de body */
 }
 
-video,
-img,
-audio {
+video {
+    width: 100%;
+    height: auto;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+section h4 + img {
     width: 100%;
     height: auto;
 }
