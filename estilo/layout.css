@@ -11,6 +11,12 @@ nav{
     gap: 1em;
 }
 
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 @media screen and (min-width:320px) and (max-width:799px){
     header,
     header h1,
@@ -36,14 +42,19 @@ nav{
         height: auto;
     }
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     article h2 + img {
         width: 100%;
         height: auto;
     }
 
-    body>div {
-        width: 500px;
-        height:500px;
+    body > div {
+        width: 100%;
+        height: 30em;
     }
 }
 

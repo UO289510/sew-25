@@ -3,7 +3,8 @@
     <head>
         <!-- Datos que describen el documento -->
         <meta charset="UTF-8" />
-        <title>MotoGP</title>
+        <title>MotoGP Desktop - Test de usabilidad</title>
+        <link rel="icon" href="../multimedia/favicon.ico">
         <meta name="author" content="Daniel López Fdez"/>
         <meta name="description" content="Prueba de usabilidad"/>
         <meta name="keywords" content="usabilidad, cuestionario, preguntas"/>
@@ -52,9 +53,9 @@
                         echo "<form action='#' method='post' name='cuestionario'>";
                         while($fila = $resultado->fetch_assoc()) {
                             echo "<p>" . $fila["texto"] . "</p>";
-                            echo "<input type='text' name='respuesta_" . $fila["codigo_pregunta"] . "' required/><br>";
+                            echo "<input type='text' name='respuesta_" . $fila["codigo_pregunta"] . "' required/>";
                         }
-                        echo "<br><input type='submit' class='button' name='terminar' value='Terminar cuestionario'/>";
+                        echo "<input type='submit' class='button' name='terminar' value='Terminar cuestionario'/>";
                         echo "</form>";
                         $this->cronometro->arrancar();
                     } else {
@@ -137,15 +138,15 @@
 
                     echo "<h2>Feedback del usuario</h2>";
                     echo "<form action='#' method='post' name='feedback'/>";
-                    echo "<p>Valoración: <input type='number' name='valoracion' min='0' max='10'required/></p><br>";
-                    echo "<p>¿Qué dispositivo utilizaste?</p><br>";
+                    echo "<p>Valoración: <input type='number' name='valoracion' min='0' max='10'required/></p>";
+                    echo "<p>¿Qué dispositivo utilizaste?</p>";
                     while ($fila = $resultado->fetch_assoc()) {
                         $codigo = $fila["codigo_dispositivo"];
                         $nombre = $fila["nombre"];
                         echo "<input type='radio' name='dispositivo' value='$codigo' required/> $nombre";
                     }
-                    echo "<br><p>Comentarios sobre la aplicación: <input type='text' name='comentarios' size='500'/></p>";
-                    echo "<br><p>Feedback para mejorar la aplicación: <input type='text' name='feedback' size='500'/></p>";
+                    echo "<p>Comentarios sobre la aplicación: <input type='text' name='comentarios' size='500'/></p>";
+                    echo "<p>Feedback para mejorar la aplicación: <input type='text' name='feedback' size='500'/></p>";
                     echo "<input type='submit' class='button' name='guardarFeedbackUsuario' value='Enviar'/>";
                     echo "</form>";
                     $db->close();
@@ -197,9 +198,9 @@
                 private function pedirObservaciones(){            
                     echo "<h2>Observaciones del examinador</h2>";
                     echo "<form action='#' method='post' name='observaciones'/>";
-                    echo "<p>Pericia informatica del usuario: <input type='number' name='pericia' min='0' max='10' required/></p><br>";
-                    echo "<p>Marcar si ha completado el cuestionario: <input type='checkbox' name='completado'/></p><br>";
-                    echo "<p>Observaciones sobre el usuario: <input type='text' name='observaciones' size=500/></p><br>";
+                    echo "<p>Pericia informatica del usuario: <input type='number' name='pericia' min='0' max='10' required/></p>";
+                    echo "<p>Marcar si ha completado el cuestionario: <input type='checkbox' name='completado'/></p>";
+                    echo "<p>Observaciones sobre el usuario: <input type='text' name='observaciones' size=500/></p>";
                     echo "<input type='submit' class='button' name='guardarObservaciones' value='Registrar observaciones'/>";
                     echo "</form>";
                 }

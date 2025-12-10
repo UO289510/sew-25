@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?><svg width="5000" height="300" xmlns="http://www.w3.org/2000/svg">
+  <polyline points="30.0,-6829.5 70.5,-6829.5 111.0,-6850.5 151.5,-6861.0 192.0,-6871.5 232.5,-6913.5 273.0,-6966.0 313.5,-6987.0 354.0,-7008.0 394.5,-7029.0 435.0,-7039.5 475.5,-7039.5 516.0,-7050.0 556.5,-7060.5 597.0,-7060.5 637.5,-7081.5 678.0,-7081.5 718.5,-7092.0 759.0,-7186.5 799.5,-7480.5 840.0,-7512.0 880.5,-7522.5 921.0,-7533.0 961.5,-7522.5 1002.0,-7491.0 1042.5,-7407.0 1083.0,-7333.5 1123.5,-7323.0 1164.0,-7281.0 1204.5,-7228.5 1245.0,-7207.5 1285.5,-7197.0 1326.0,-7186.5 1366.5,-7165.5 1407.0,-7144.5 1447.5,-7134.0 1488.0,-7134.0 1528.5,-7144.5 1569.0,-7155.0 1609.5,-7165.5 1650.0,-7165.5 1690.5,-7176.0 1731.0,-7165.5 1771.5,-7165.5 1812.0,-7165.5 1852.5,-7134.0 1893.0,-7134.0 1933.5,-7102.5 1974.0,-7071.0 2014.5,-6976.5 2055.0,-6966.0 2095.5,-6966.0 2136.0,-6966.0 2176.5,-6955.5 2217.0,-6955.5 2257.5,-6955.5 2298.0,-6955.5 2338.5,-6966.0 2379.0,-6987.0 2419.5,-6987.0 2460.0,-6987.0 2500.5,-6987.0 2541.0,-6987.0 2581.5,-7018.5 2622.0,-7050.0 2662.5,-7060.5 2703.0,-7071.0 2743.5,-7081.5 2784.0,-7071.0 2824.5,-7060.5 2865.0,-7039.5 2905.5,-7029.0 2946.0,-7018.5 2986.5,-6997.5 3027.0,-6976.5 3067.5,-6903.0 3108.0,-6892.5 3148.5,-6871.5 3189.0,-6861.0 3229.5,-6850.5" stroke="blue" stroke-width="2" fill="none"/>
+  <text x="30.0" y="-6829.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  679.0m (0.0m)
+  </text>
+  <text x="70.5" y="-6829.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  679.0m (69.6m)
+  </text>
+  <text x="111.0" y="-6850.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  681.0m (133.81m)
+  </text>
+  <text x="151.5" y="-6861.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  682.0m (145.81m)
+  </text>
+  <text x="192.0" y="-6871.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  683.0m (166.29m)
+  </text>
+  <text x="232.5" y="-6913.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  687.0m (232.93m)
+  </text>
+  <text x="273.0" y="-6966.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  692.0m (275.89m)
+  </text>
+  <text x="313.5" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (305.31m)
+  </text>
+  <text x="354.0" y="-7008.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  696.0m (386.6m)
+  </text>
+  <text x="394.5" y="-7029.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  698.0m (521.31m)
+  </text>
+  <text x="435.0" y="-7039.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  699.0m (656.02m)
+  </text>
+  <text x="475.5" y="-7039.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  699.0m (754.26m)
+  </text>
+  <text x="516.0" y="-7050.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  700.0m (876.39m)
+  </text>
+  <text x="556.5" y="-7060.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  701.0m (998.52m)
+  </text>
+  <text x="597.0" y="-7060.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  701.0m (1043.0m)
+  </text>
+  <text x="637.5" y="-7081.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  703.0m (1114.11m)
+  </text>
+  <text x="678.0" y="-7081.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  703.0m (1185.22m)
+  </text>
+  <text x="718.5" y="-7092.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  704.0m (1341.68m)
+  </text>
+  <text x="759.0" y="-7186.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  713.0m (1555.03m)
+  </text>
+  <text x="799.5" y="-7480.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  741.0m (1567.31m)
+  </text>
+  <text x="840.0" y="-7512.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  744.0m (1584.48m)
+  </text>
+  <text x="880.5" y="-7522.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  745.0m (1675.0m)
+  </text>
+  <text x="921.0" y="-7533.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  746.0m (1730.78m)
+  </text>
+  <text x="961.5" y="-7522.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  745.0m (1808.66m)
+  </text>
+  <text x="1002.0" y="-7491.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  742.0m (1973.55m)
+  </text>
+  <text x="1042.5" y="-7407.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  734.0m (2142.03m)
+  </text>
+  <text x="1083.0" y="-7333.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  727.0m (2356.25m)
+  </text>
+  <text x="1123.5" y="-7323.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  726.0m (2570.47m)
+  </text>
+  <text x="1164.0" y="-7281.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  722.0m (2784.69m)
+  </text>
+  <text x="1204.5" y="-7228.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  717.0m (2811.85m)
+  </text>
+  <text x="1245.0" y="-7207.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  715.0m (2834.6m)
+  </text>
+  <text x="1285.5" y="-7197.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  714.0m (2856.28m)
+  </text>
+  <text x="1326.0" y="-7186.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  713.0m (2907.04m)
+  </text>
+  <text x="1366.5" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (2952.59m)
+  </text>
+  <text x="1407.0" y="-7144.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  709.0m (3007.71m)
+  </text>
+  <text x="1447.5" y="-7134.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  708.0m (3047.72m)
+  </text>
+  <text x="1488.0" y="-7134.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  708.0m (3102.88m)
+  </text>
+  <text x="1528.5" y="-7144.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  709.0m (3140.29m)
+  </text>
+  <text x="1569.0" y="-7155.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  710.0m (3200.69m)
+  </text>
+  <text x="1609.5" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (3237.78m)
+  </text>
+  <text x="1650.0" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (3258.48m)
+  </text>
+  <text x="1690.5" y="-7176.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  712.0m (3285.6m)
+  </text>
+  <text x="1731.0" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (3316.0m)
+  </text>
+  <text x="1771.5" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (3348.95m)
+  </text>
+  <text x="1812.0" y="-7165.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  711.0m (3380.01m)
+  </text>
+  <text x="1852.5" y="-7134.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  708.0m (3394.47m)
+  </text>
+  <text x="1893.0" y="-7134.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  708.0m (3408.63m)
+  </text>
+  <text x="1933.5" y="-7102.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  705.0m (3431.54m)
+  </text>
+  <text x="1974.0" y="-7071.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  702.0m (3574.33m)
+  </text>
+  <text x="2014.5" y="-6976.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  693.0m (3586.93m)
+  </text>
+  <text x="2055.0" y="-6966.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  692.0m (3606.81m)
+  </text>
+  <text x="2095.5" y="-6966.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  692.0m (3620.7m)
+  </text>
+  <text x="2136.0" y="-6966.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  692.0m (3656.31m)
+  </text>
+  <text x="2176.5" y="-6955.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  691.0m (3675.1m)
+  </text>
+  <text x="2217.0" y="-6955.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  691.0m (3691.17m)
+  </text>
+  <text x="2257.5" y="-6955.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  691.0m (3723.89m)
+  </text>
+  <text x="2298.0" y="-6955.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  691.0m (3763.85m)
+  </text>
+  <text x="2338.5" y="-6966.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  692.0m (3779.13m)
+  </text>
+  <text x="2379.0" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (3796.7m)
+  </text>
+  <text x="2419.5" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (3832.61m)
+  </text>
+  <text x="2460.0" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (3865.53m)
+  </text>
+  <text x="2500.5" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (4001.79m)
+  </text>
+  <text x="2541.0" y="-6987.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  694.0m (4104.06m)
+  </text>
+  <text x="2581.5" y="-7018.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  697.0m (4161.38m)
+  </text>
+  <text x="2622.0" y="-7050.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  700.0m (4205.95m)
+  </text>
+  <text x="2662.5" y="-7060.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  701.0m (4267.19m)
+  </text>
+  <text x="2703.0" y="-7071.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  702.0m (4316.74m)
+  </text>
+  <text x="2743.5" y="-7081.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  703.0m (4380.28m)
+  </text>
+  <text x="2784.0" y="-7071.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  702.0m (4443.78m)
+  </text>
+  <text x="2824.5" y="-7060.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  701.0m (4485.82m)
+  </text>
+  <text x="2865.0" y="-7039.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  699.0m (4520.84m)
+  </text>
+  <text x="2905.5" y="-7029.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  698.0m (4551.92m)
+  </text>
+  <text x="2946.0" y="-7018.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  697.0m (4613.97m)
+  </text>
+  <text x="2986.5" y="-6997.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  695.0m (4676.02m)
+  </text>
+  <text x="3027.0" y="-6976.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  693.0m (4772.47m)
+  </text>
+  <text x="3067.5" y="-6903.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  686.0m (4789.04m)
+  </text>
+  <text x="3108.0" y="-6892.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  685.0m (4808.04m)
+  </text>
+  <text x="3148.5" y="-6871.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  683.0m (4858.44m)
+  </text>
+  <text x="3189.0" y="-6861.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  682.0m (4910.83m)
+  </text>
+  <text x="3229.5" y="-6850.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+  681.0m (5256.24m)
+  </text>
+</svg>

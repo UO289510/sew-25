@@ -13,47 +13,47 @@ class Circuito {
 
     async #leerArchivoHTML() {
         try {
-            const respuesta = await fetch("xml/infoCircuito.html");
+            var respuesta = await fetch("xml/infoCircuito.html");
             if (!respuesta.ok) {
                 throw new Error("No se pudo cargar InfoCircuito.html");
             }
 
-            const contenido = await respuesta.text();
+            var contenido = await respuesta.text();
 
             // Parseamos el HTML con DOMParser
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(contenido, "text/html");
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(contenido, "text/html");
 
             // Seleccionamos el <main> de circuito.html donde vamos a insertar la info
-            const main = document.querySelector("main");
+            var main = document.querySelector("main");
 
             // Añadimos el título principal
-            const titulo = doc.querySelector("h2");
+            var titulo = doc.querySelector("h2");
             if (titulo) {
-                const nuevoTitulo = document.createElement("h2");
+                var nuevoTitulo = document.createElement("h2");
                 nuevoTitulo.textContent = titulo.textContent;
                 main.appendChild(nuevoTitulo);
             }
 
             // Recorremos todas las secciones del archivo
-            const secciones = doc.querySelectorAll("section");
+            var secciones = doc.querySelectorAll("section");
             secciones.forEach(sec => {
-                const nuevaSeccion = document.createElement("section");
+                var nuevaSeccion = document.createElement("section");
 
                 // Copiamos el título de la sección
-                const h3 = sec.querySelector("h3");
+                var h3 = sec.querySelector("h3");
                 if (h3) {
-                    const nuevoH3 = document.createElement("h3");
+                    var nuevoH3 = document.createElement("h3");
                     nuevoH3.textContent = h3.textContent;
                     nuevaSeccion.appendChild(nuevoH3);
                 }
 
                 // Copiamos listas <ul>
-                const ul = sec.querySelector("ul");
+                var ul = sec.querySelector("ul");
                 if (ul) {
-                    const nuevoUl = document.createElement("ul");
+                    var nuevoUl = document.createElement("ul");
                     ul.querySelectorAll("li").forEach(li => {
-                        const nuevoLi = document.createElement("li");
+                        var nuevoLi = document.createElement("li");
                         nuevoLi.innerHTML = li.innerHTML; // conserva enlaces si los hay
                         nuevoUl.appendChild(nuevoLi);
                     });
@@ -61,30 +61,30 @@ class Circuito {
                 }
 
                 // Copiamos subsecciones (ej. galería)
-                const subsecciones = sec.querySelectorAll("section");
+                var subsecciones = sec.querySelectorAll("section");
                 subsecciones.forEach(sub => {
-                    const nuevaSub = document.createElement("section");
+                    var nuevaSub = document.createElement("section");
 
-                    const h4 = sub.querySelector("h4");
+                    var h4 = sub.querySelector("h4");
                     if (h4) {
-                        const nuevoH4 = document.createElement("h4");
+                        var nuevoH4 = document.createElement("h4");
                         nuevoH4.textContent = h4.textContent;
                         nuevaSub.appendChild(nuevoH4);
                     }
 
                     // Copiamos imágenes
-                    const img = sub.querySelector("img");
+                    var img = sub.querySelector("img");
                     if (img) {
-                        const nuevaImg = document.createElement("img");
+                        var nuevaImg = document.createElement("img");
                         nuevaImg.src = img.src;
                         nuevaImg.alt = img.alt;
                         nuevaSub.appendChild(nuevaImg);
                     }
 
                     // Copiamos vídeos
-                    const video = sub.querySelector("video");
+                    var video = sub.querySelector("video");
                     if (video) {
-                        const nuevoVideo = document.createElement("video");
+                        var nuevoVideo = document.createElement("video");
                         nuevoVideo.src = video.src;
                         nuevoVideo.controls = true; // añadimos controles
                         nuevaSub.appendChild(nuevoVideo);
@@ -112,21 +112,29 @@ class CargadorSVG {
     leerArchivoSVG(file) {
         this.archivo = file[0];
 
-        const lector = new FileReader();
+        var lector = new FileReader();
 
         lector.onload = (evento) => {
-            const contenidoSVG = evento.target.result;
-            this.insertarSVG(contenidoSVG);
+            var contenidoSVG = evento.target.result;
+            this.#insertarSVG(contenidoSVG);
         };
 
-        lector.readAsText(this.archivo); // leemos el archivo como texto
+        lector.readAsText(this.archivo);
     }
 
-    insertarSVG(contenido) {
-        // Creamos un contenedor para mostrar el SVG
-        const contenedor = document.createElement("div");
-        contenedor.innerHTML = contenido; // insertamos el SVG directamente
-        document.body.appendChild(contenedor);
+    #insertarSVG(contenido) {
+        var contenedor = document.createElement("section");
+        contenedor.innerHTML = contenido;
+        
+        var svg = contenedor.querySelector("svg");
+
+        if(!svg.hasAttribute("viewBox")){
+            var width = svg.getAttribute("width");
+            var height = svg.getAttribute("height");
+            svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+        }
+
+        document.querySelector("main").appendChild(contenedor);
     }
 
 }
@@ -141,24 +149,24 @@ class CargadorKML {
         this.archivo = file[0];
 
         if (this.archivo.name.toLowerCase().endsWith(".kml")) {
-            const lector = new FileReader();
+            var lector = new FileReader();
 
             lector.onload = (evento) => {
-                const kmlDoc = $.parseXML(lector.result);
-                const kml = $(kmlDoc);
+                var kmlDoc = $.parseXML(lector.result);
+                var kml = $(kmlDoc);
 
-                const doc = kml[0];
-                const firstNode = doc.firstChild;
-                const tramos = firstNode.firstChild.children;
+                var doc = kml[0];
+                var firstNode = doc.firstChild;
+                var tramos = firstNode.firstChild.children;
 
                 var placemark = tramos[tramos.length-1].children;
                 var lineString = placemark[0];
 
-                const coordenadas = [];
-                const infoTramos = [];
+                var coordenadas = [];
+                var infoTramos = [];
 
                 for (let t = 0; t < tramos.length - 2; t++) {
-                    const data = tramos[t].children;
+                    var data = tramos[t].children;
 
                     let numero = data[0].textContent.charAt(1);
                     let sector = data[1].textContent.charAt(1);
@@ -178,20 +186,15 @@ class CargadorKML {
                 }
 
                 // Creamos el contenedor del mapa
-                const mapa = document.createElement("div");
-                mapa.style.width = "600px";
-                mapa.style.height = "400px";
-
-                const container = document.createElement("section");
-                container.appendChild(mapa);
-                document.querySelector("main").appendChild(container);
+                var mapa = document.createElement("div");
+                document.querySelector("body").appendChild(mapa);
 
                 // Llamamos al método que inserta la capa en el mapa
                 this.insertarCapaKML(coordenadas, mapa);
             };
             lector.readAsText(this.archivo);
         } else {
-            const errorArchivo = document.createElement("p");
+            var errorArchivo = document.createElement("p");
             errorArchivo.innerText = "Error: ¡¡¡ Archivo no válido !!!";
             document.querySelector("main").appendChild(errorArchivo);
         }
@@ -199,14 +202,14 @@ class CargadorKML {
 
 
     insertarCapaKML(coordenadas, mapa){
-        const centroLat = coordenadas[0][0];
-        const centroLong = coordenadas[0][1];
+        var centroLat = coordenadas[0][0];
+        var centroLong = coordenadas[0][1];
 
         mapboxgl.accessToken = "pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
-        const map = new mapboxgl.Map({
+        var map = new mapboxgl.Map({
             container: mapa,
             style: 'mapbox://styles/mapbox/streets-v12',
-            zoom: 15,
+            zoom: 14,
             center: [centroLat, centroLong],
             attributionControl: false
         });

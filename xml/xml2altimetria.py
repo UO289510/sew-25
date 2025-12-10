@@ -4,7 +4,7 @@ import re
 class Svg(object):
 
     def __init__(self):
-        self.svg_width = 5000
+        self.svg_width = 1900
         self.svg_height = 300
         self.puntos = []
         self.distancias = []
@@ -13,9 +13,9 @@ class Svg(object):
     def addTramo(self, distancia, sector, latitud, longitud, altitud):
         # Calcula la posición X e Y y la añade a la lista de puntos
 
-        escala_x = 40.5
-        escala_y = 0.3
-        desplazamiento_x = 30
+        escala_x = 23.0
+        escala_y = 0.25
+        desplazamiento_x = 10
 
         x = len(self.puntos)*escala_x + desplazamiento_x # Escalado de longitud, ajusta según tus necesidades
         y_base = 300  # Base de Y para que el 0 esté en la parte inferior

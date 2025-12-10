@@ -16,6 +16,7 @@ class Cronometro{
     }
 
     arrancar(){
+        if(this.#corriendo) return;
         try{
             this.#inicio = Temporal.Now.instant();
         }catch(err){
@@ -58,11 +59,13 @@ class Cronometro{
 
     parar(){
         clearInterval(this.#corriendo);
+        this.#corriendo = null;
     }
 
     reiniciar(){
         clearInterval(this.#corriendo);
+        this.#corriendo = null;
         this.#tiempo = 0;
-        this.mostrar();
+        this.#mostrar();
     }
 }

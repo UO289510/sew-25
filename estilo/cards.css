@@ -4,14 +4,14 @@
 /* Regla con el estilo general para las tarjetas del juego */
 /* especificidad: 002 */
 main article {
-    width: 20vw;
-    height: 20em;
+    width: auto;
+    height: 10em;
     position: relative;
     transform: scale(1);
     cursor: pointer;
     transform-style: preserve-3d;
     transition: transform .5s;
-    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,.3);
+    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0);
 }
 
 /* Regla con la transformación que permite girar la carta cuando se le pone el atributo personalizado data-estado al valor volteada */
@@ -29,19 +29,14 @@ main article[data-estado=revelada]{
 /* Reglas con los estilos generales para el encabezado y la imagen de la carta */
 /* especificidad: 002 */
 /* especificidad: 002 */
-article h3,
-article img {
+article h3 {
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 0.5em;
-    background: #1C7CCC;
+    background: #9c1717;
     backface-visibility: hidden;
-}
 
-/* Regla para centrar el texto "Memory Card" vertical y horizontalmente en cada carta */
-/* especificidad: 002 */
-article h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,8 +44,26 @@ article h3 {
     margin: 0;
 }
 
+
+/* Regla para centrar el texto "Memory Card" vertical y horizontalmente en cada carta */
+/* especificidad: 002 */
+/**
+article h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+*/
 /* Regla para rotar las imágenes y que se vean correctamente cuando se giran las cartas */
 /* especificidad: 002 */
 article img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.5em;
+    background: white; /* blanco */
+    backface-visibility: hidden;
     transform: rotateY(180deg);
 }

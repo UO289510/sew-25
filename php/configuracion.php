@@ -3,7 +3,8 @@
     <head>
         <!-- Datos que describen el documento -->
         <meta charset="UTF-8" />
-        <title>MotoGP</title>
+        <title>MotoGP Desktop - Configuración</title>
+        <link rel="icon" href="../multimedia/favicon.ico">
         <meta name="author" content="Daniel López Fdez"/>
         <meta name="description" content="Configuracion del test"/>
         <meta name="keywords" content="test, pruebas, configuración"/>
