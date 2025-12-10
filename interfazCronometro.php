@@ -3,7 +3,8 @@
     <head>
         <!-- Datos que describen el documento -->
         <meta charset="UTF-8" />
-        <title>MotoGP</title>
+        <title>MotoGP Desktop - Interfaz cronometro</title>
+        <link rel="icon" href="multimedia/favicon.ico">
         <meta name="author" content="Daniel López Fdez"/>
         <meta name="description" content="Juego del cronometro"/>
         <meta name="keywords" content="entretenimiento, reaccion, cronometro"/>
@@ -15,7 +16,7 @@
     <body>
         <?php include 'cronometro.php';?>
         <header>
-            <h1>MotoGP Desktop</h1>
+            <h1><a href="index.html">MotoGP Desktop</a></h1>
             <nav>
                 <a href="index.html" title="Index">Inicio</a>
                 <a href="piloto.html" title="Información del piloto">Piloto</a>
@@ -24,7 +25,7 @@
                 <a href="clasificaciones.php" title="Información de la temporada">Clasificaciones</a>
                 <a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>
                 <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
-                <a href="cronometro.php" class="active" title="Cronometro">Cronometro</a>
+                <a href="interfazCronometro.php" class="active" title="Cronometro">Cronometro</a>
             </nav>
         </header>
 

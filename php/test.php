@@ -230,7 +230,7 @@
                     $prepQuery->close();
 
                     $prepQuery = $db->prepare("INSERT INTO observaciones (codigo_usuario, observacion) VALUES (?, ?);");
-                    $prepQuery->bind_param('ii', $codigo_usuario, $observaciones);
+                    $prepQuery->bind_param('is', $codigo_usuario, $observaciones);
                     $prepQuery->execute();
                     $prepQuery->close();
 

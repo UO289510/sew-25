@@ -78,7 +78,7 @@
                 echo("Error de conexión: " . $db->connect_error);
             }
 
-            $tablas = ['usuario', 'resultados', 'propuestas', 'observaciones', 'comentarios', 'dispositivo'];
+            $tablas = ['usuario', 'resultados', 'propuestas', 'observaciones', 'comentarios', 'dispositivo', 'respuesta', 'pregunta'];
 
             $archivo = fopen(__DIR__ . "/datos_exportados.csv", "w");
 
@@ -146,7 +146,7 @@
                 "CREATE TABLE IF NOT EXISTS `observaciones` (
                     `codigo_observacion` int(2) NOT NULL,
                     `codigo_usuario` int(2) NOT NULL,
-                    `Comentarios` text NOT NULL
+                    `observacion` text NOT NULL
                 );",
                 "CREATE TABLE IF NOT EXISTS `dispositivo` (
                     `codigo_dispositivo` int(2) NOT NULL,

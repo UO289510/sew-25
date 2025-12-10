@@ -4,7 +4,8 @@
 <head>
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
-    <title>MotoGP</title>
+    <title>MotoGP Desktop - Clasificaciones</title>
+    <link rel="icon" href="multimedia/favicon.ico">
     <meta name="author" content="Daniel López Fdez"/>
     <meta name="description" content="Pagina de clasificaciones de la página web MotoGP Desktop"/>
     <meta name="keywords" content="clasificaciones, temporada, motogp, carreras"/>
@@ -41,8 +42,8 @@
                 
                 $html = "<section><ul>";
                 $html .= "<li>Ganador: " . $resultados->ganador . "</li>";
-                $html .= "<li>Tiempo: " . $resultados->tiempo . "</li></ul><section>";
-                $html .= "<section><ol><li>" . $resultados->primer_puesto . "</li>";
+                $html .= "<li>Tiempo: " . $resultados->tiempo . "</li></ul></section>";
+                $html .= "<section><h3>Podio</h3><ol><li>" . $resultados->primer_puesto . "</li>";
                 $html .= "<li>" . $resultados->segundo_puesto . "</li>";
                 $html .= "<li>" . $resultados->tercer_puesto . "</li></ol></section>";
             
@@ -52,7 +53,7 @@
     ?>
 
     <header>
-        <h1>MotoGP Desktop</h1>
+        <h1><a href="index.html">MotoGP Desktop</a></h1>
         <nav>
             <a href="index.html" title="Index">Inicio</a>
             <a href="piloto.html" title="Información del piloto">Piloto</a>
@@ -61,7 +62,7 @@
             <a href="clasificaciones.php" class="active" title="Información de la temporada">Clasificaciones</a>
             <a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>
             <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
-            <a href="cronometro.php" title="Cronometro">Cronometro</a>
+            <a href="interfazCronometro.php" title="Cronometro">Cronometro</a>
         </nav>
     </header>
 

@@ -27,7 +27,7 @@
             $min = floor($_SESSION['tiempo']/60);
             $seg = $_SESSION['tiempo'] % 60;
             $this->tiempo = $_SESSION['tiempo'];
-            echo sprintf("<br>Has tardado %02d min y %02d seg", $min, $seg);
+            echo sprintf("Has tardado %02d min y %02d seg", $min, $seg);
         }
 
         function procesarBoton(){
