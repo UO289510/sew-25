@@ -35,6 +35,7 @@
                     $this->dbUser = 'DBUSER2025';
                     $this->dbPass = 'DBPSWD2025';
                     $this->dbname = 'uo289510_db';
+                    $_SESSION['pruebaTerminada'] = false;
                     $this->cronometro = new Cronometro();
                 }
 
@@ -91,6 +92,10 @@
                 }
                 
                 public function preguntarDatosUsuario(){
+                    if($_SESSION['pruebaTerminada']){
+                        echo "<h2>La prueba ha finalizado. Gracias por su participación.</h2>";
+                        $_SESSION['pruebaTerminada'] = false;
+                    }
                     echo "<form action='#' method='post' name='datosUsuario'>";
                     echo "<p>Profesion: <input type='text' name='profesion' required/></p>";
                     echo "<p>Edad: <input type='number' name='edad' required/></p>";
@@ -200,7 +205,7 @@
                     echo "<form action='#' method='post' name='observaciones'/>";
                     echo "<p>Pericia informatica del usuario: <input type='number' name='pericia' min='0' max='10' required/></p>";
                     echo "<p>Marcar si ha completado el cuestionario: <input type='checkbox' name='completado'/></p>";
-                    echo "<p>Observaciones sobre el usuario: <input type='text' name='observaciones' size=500/></p>";
+                    echo "<p>Observaciones sobre el usuario: <input type='text' name='observaciones' size='500' /></p>";
                     echo "<input type='submit' class='button' name='guardarObservaciones' value='Registrar observaciones'/>";
                     echo "</form>";
                 }
@@ -235,7 +240,16 @@
                     $prepQuery->close();
 
                     $db->close();
-                }   
+
+                    $this->terminarPrueba();
+                }
+                
+                private function terminarPrueba(){
+                    $_SESSION['pruebaTerminada'] = true;
+                    $this->preguntarDatosUsuario();    
+                }
+
+
             }
         ?>
 

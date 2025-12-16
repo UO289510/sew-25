@@ -41,7 +41,9 @@ class Noticias{
         }
         
         var section = document.createElement("section");
-        
+        var title = document.createElement("h2");
+        title.textContent = "Noticias relacionadas";
+        section.appendChild(title);
         for(var noticia of noticiasProcesadas){
 
             var sectionNoticia = document.createElement("section");

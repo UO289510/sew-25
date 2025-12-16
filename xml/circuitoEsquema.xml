@@ -33,7 +33,7 @@ xsi:schemaLocation="https://www.uniovi.es circuito.xsd">
         </galeria_imagenes>
 
         <galeria_videos>
-            <video src="multimedia/circuito.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+                <video src="multimedia/circuito.mp4"/>
         </galeria_videos>
     </galeria>
 

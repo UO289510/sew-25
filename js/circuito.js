@@ -20,14 +20,11 @@ class Circuito {
 
             var contenido = await respuesta.text();
 
-            // Parseamos el HTML con DOMParser
             var parser = new DOMParser();
             var doc = parser.parseFromString(contenido, "text/html");
 
-            // Seleccionamos el <main> de circuito.html donde vamos a insertar la info
             var main = document.querySelector("main");
 
-            // Añadimos el título principal
             var titulo = doc.querySelector("h2");
             if (titulo) {
                 var nuevoTitulo = document.createElement("h2");
@@ -35,12 +32,10 @@ class Circuito {
                 main.appendChild(nuevoTitulo);
             }
 
-            // Recorremos todas las secciones del archivo
-            var secciones = doc.querySelectorAll("section");
+            var secciones = doc.querySelectorAll("main > section");
             secciones.forEach(sec => {
                 var nuevaSeccion = document.createElement("section");
 
-                // Copiamos el título de la sección
                 var h3 = sec.querySelector("h3");
                 if (h3) {
                     var nuevoH3 = document.createElement("h3");
@@ -48,19 +43,17 @@ class Circuito {
                     nuevaSeccion.appendChild(nuevoH3);
                 }
 
-                // Copiamos listas <ul>
                 var ul = sec.querySelector("ul");
                 if (ul) {
                     var nuevoUl = document.createElement("ul");
                     ul.querySelectorAll("li").forEach(li => {
                         var nuevoLi = document.createElement("li");
-                        nuevoLi.innerHTML = li.innerHTML; // conserva enlaces si los hay
+                        nuevoLi.innerHTML = li.innerHTML;
                         nuevoUl.appendChild(nuevoLi);
                     });
                     nuevaSeccion.appendChild(nuevoUl);
                 }
 
-                // Copiamos subsecciones (ej. galería)
                 var subsecciones = sec.querySelectorAll("section");
                 subsecciones.forEach(sub => {
                     var nuevaSub = document.createElement("section");
@@ -72,22 +65,30 @@ class Circuito {
                         nuevaSub.appendChild(nuevoH4);
                     }
 
-                    // Copiamos imágenes
                     var img = sub.querySelector("img");
                     if (img) {
                         var nuevaImg = document.createElement("img");
-                        nuevaImg.src = img.src;
+                        
+                        var srcImagen = img.src;
+                        srcImagen = srcImagen.replace("http://localhost/","");
+                        nuevaImg.src = srcImagen;
                         nuevaImg.alt = img.alt;
                         nuevaSub.appendChild(nuevaImg);
                     }
 
-                    // Copiamos vídeos
                     var video = sub.querySelector("video");
                     if (video) {
+
                         var nuevoVideo = document.createElement("video");
-                        nuevoVideo.src = video.src;
-                        nuevoVideo.controls = true; // añadimos controles
+                        nuevoVideo.controls = true;
+
+                        var source = video.children[0];
+                        var srcVideo = source.src;
+                        srcVideo = srcVideo.replace("http://localhost/","");
+                        source.setAttribute("src", srcVideo);
+                        nuevoVideo.appendChild(source);
                         nuevaSub.appendChild(nuevoVideo);
+                        
                     }
 
                     nuevaSeccion.appendChild(nuevaSub);
@@ -112,21 +113,32 @@ class CargadorSVG {
     leerArchivoSVG(file) {
         this.archivo = file[0];
 
-        var lector = new FileReader();
-
-        lector.onload = (evento) => {
-            var contenidoSVG = evento.target.result;
-            this.#insertarSVG(contenidoSVG);
-        };
-
-        lector.readAsText(this.archivo);
+        if(this.archivo.name.toLowerCase().endsWith(".svg")){
+            var lector = new FileReader();
+    
+            lector.onload = (evento) => {
+                var contenidoSVG = evento.target.result;
+                this.#insertarSVG(contenidoSVG);
+            };
+    
+            lector.readAsText(this.archivo);
+        }else{
+            var errorArchivo = document.createElement("p");
+            errorArchivo.innerText = "Error: Inserte un svg válido.";
+            document.querySelector("main").appendChild(errorArchivo);
+        }
     }
 
     #insertarSVG(contenido) {
+
         var contenedor = document.createElement("section");
         contenedor.innerHTML = contenido;
-        
-        var svg = contenedor.querySelector("svg");
+        var svg = contenedor.children[0];
+
+        var title = document.createElement("h3");
+        title.textContent = "Altimetria";
+
+        contenedor.insertBefore(title, svg);
 
         if(!svg.hasAttribute("viewBox")){
             var width = svg.getAttribute("width");
@@ -160,7 +172,6 @@ class CargadorKML {
                 var tramos = firstNode.firstChild.children;
 
                 var placemark = tramos[tramos.length-1].children;
-                var lineString = placemark[0];
 
                 var coordenadas = [];
                 var infoTramos = [];
@@ -185,11 +196,9 @@ class CargadorKML {
                     infoTramos[t] = info;
                 }
 
-                // Creamos el contenedor del mapa
                 var mapa = document.createElement("div");
                 document.querySelector("body").appendChild(mapa);
 
-                // Llamamos al método que inserta la capa en el mapa
                 this.insertarCapaKML(coordenadas, mapa);
             };
             lector.readAsText(this.archivo);

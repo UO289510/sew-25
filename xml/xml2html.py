@@ -13,18 +13,18 @@ class HTML(object):
         self.contenido += '\t\t<meta name="description" content="Pagina de información del circuito de la página web MotoGP Desktop"/>\n'
         self.contenido += '\t\t<meta name="keywords" content="carreras, circuito, fecha, austria"/>\n'
         self.contenido += '\t\t<meta name="viewport" content="width=device-width, initial-scale=1.0"/>\n'
-        self.contenido += '\t\t<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />\n'
-        self.contenido += '\t\t<link rel="stylesheet" type="text/css" href="estilo/layout.css" />\n'
+        self.contenido += '\t\t<link rel="stylesheet" type="text/css" href="../estilo/estilo.css" />\n'
+        self.contenido += '\t\t<link rel="stylesheet" type="text/css" href="../estilo/layout.css" />\n'
         self.contenido += '\t\t</head>\n<body>\n'
         self.contenido += '\t<header>\n\t\t<h1>MotoGP Desktop</h1>\n\t\t<nav>\n'
-        self.contenido +='\t\t\t<a href="index.html" title="Index">Inicio</a>\n'
-        self.contenido +='\t\t\t<a href="piloto.html" title="Información del piloto">Piloto</a>\n'
-        self.contenido +='\t\t\t<a href="circuito.html" title="Información del circuito">Circuito</a>\n'
-        self.contenido +='\t\t\t<a href="metereologia.html" class="active" title="Información metereologica">Metereología</a>\n'
-        self.contenido +='\t\t\t<a href="clasificaciones.html" title="Información de la temporada">Clasificaciones</a>\n'
-        self.contenido +='\t\t\t<a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>\n'
-        self.contenido +='\t\t\t<a href="ayuda.html" title="Página de ayuda">Ayuda</a>\n\t\t</nav>\n\t</header>\n'
-        self.contenido +='\n\t<p>Estás en: <a href="index.html">Inicio</a >>> Info del Circuito </p>\n'
+        self.contenido +='\t\t\t<a href="../index.html" title="Index">Inicio</a>\n'
+        self.contenido +='\t\t\t<a href="../piloto.html" title="Información del piloto">Piloto</a>\n'
+        self.contenido +='\t\t\t<a href="../circuito.html" title="Información del circuito">Circuito</a>\n'
+        self.contenido +='\t\t\t<a href="../metereologia.html" title="Información metereologica">Metereología</a>\n'
+        self.contenido +='\t\t\t<a href="../clasificaciones.html" title="Información de la temporada">Clasificaciones</a>\n'
+        self.contenido +='\t\t\t<a href="../juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>\n'
+        self.contenido +='\t\t\t<a href="../ayuda.html" title="Página de ayuda">Ayuda</a>\n\t\t</nav>\n\t</header>\n'
+        self.contenido +='\n\t<p>Estás en: <a href="../index.html">Inicio</a >>> Info del Circuito </p>\n'
         self.contenido +='\n\t<main>\n\t\t<h2>Info del Circuito</h2>\n'
         self.root = None
         self.ns = {"u": "https://www.uniovi.es"}
@@ -63,8 +63,8 @@ class HTML(object):
         print(self.contenido+"\n")
 
     def crearHTML(self):
-        self.contenido += "\t\t</main>\n</body>\n</html>\n"
-        with open("infoCircuito.html", "w") as html_file:
+        self.contenido += "\t</main>\n</body>\n</html>\n"
+        with open("infoCircuito_prueba.html", "w") as html_file:
             html_file.write(self.contenido)
             print("HTML creado correctamente")
 
@@ -99,7 +99,7 @@ class HTML(object):
             nombre = datos['nombre']
             contenido+='\t\t\t\t\t<li>Enlace: <a href="'+valor+'">'+nombre+'</a></li>\n'
         
-        contenido+= "\t\t\t\t</ul>\n\t\t\t</section>\n"
+        contenido+= "\t\t\t\t</ul>\n\t\t</section>\n"
         self.addToHTML(contenido)
         
         
@@ -110,7 +110,7 @@ class HTML(object):
         contenido += self.cargarGaleriaImagenes("galeria/galeria_imagenes/*", "Galeria de imagenes")
         contenido += self.cargarGaleriaVideos("galeria/galeria_videos/*", "Galeria de videos")
         
-        contenido += "\t\t\t</section>\n"
+        contenido += "\t\t</section>\n"
         self.addToHTML(contenido)
         
         
@@ -120,13 +120,13 @@ class HTML(object):
         bloques = re.findall(r"\{.*?\}", imagenes);
         imagenes = [ast.literal_eval(b) for b in bloques]
              
-        contenido = "\t\t\t\t<section>\n\t\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
+        contenido = "\t\t\t\t<section>\n\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
          
         for datos in imagenes:
             valor = datos['src']
             nombre = datos['alt']
-            contenido+='\t\t\t\t\t\t<img src="'+valor+'" alt="'+nombre+'">\n'       
-        contenido+= "\t\t\t\t\t</section>\n"
+            contenido+='\t\t\t\t\t<img src="../'+valor+'" alt="'+nombre+'">\n'       
+        contenido+= "\t\t\t\t</section>\n"
         return contenido
     
     def cargarGaleriaVideos(self, xPath, nombreSeccion):
@@ -135,13 +135,16 @@ class HTML(object):
         bloques = re.findall(r"\{.*?\}", videos);
         videos = [ast.literal_eval(b) for b in bloques]
              
-        contenido = "\t\t\t\t<section>\n\t\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
-         
+        contenido = "\t\t\t\t<section>\n\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
+        
+        contenido+="\t\t\t\t\t<video controls>\n"
         for datos in videos:
             valor = datos['src']
-            nombre = datos['type']
-            contenido+='\t\t\t\t\t\t<video src="'+valor+'" type="'+nombre+'">\n'       
-        contenido+= "\t\t\t\t\t</section>\n"
+            contenido+='\t\t\t\t\t\t<source src="../'+valor+'"'
+            tipo = "video/mp4";
+            codecs = 'codecs="avc1.42E01E, mp4a.40.2"'
+            contenido+=" type='"+tipo+"; "+codecs+"'>\n"
+        contenido+= "\t\t\t\t\t</video>\n\t\t\t\t</section>\n"
         return contenido
 
     def cargarResultados(self, nombreSeccion):
@@ -159,7 +162,7 @@ class HTML(object):
         contenido+="\t\t\t\t\t<li>Primer puesto: "+primero+"</li>\n"
         contenido+="\t\t\t\t\t<li>Segundo puesto: "+segundo+"</li>\n"
         contenido+="\t\t\t\t\t<li>Tercer puesto: "+tercero+"</li>\n"
-        contenido+="\t\t\t\t</ul>\n\t\t\t</section>\n"
+        contenido+="\t\t\t\t</ul>\n\t\t</section>\n"
         self.addToHTML(contenido);
         
 def main():

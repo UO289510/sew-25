@@ -25,7 +25,7 @@
                 <a href="clasificaciones.php" title="Información de la temporada">Clasificaciones</a>
                 <a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>
                 <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
-                <a href="interfazCronometro.php" class="active" title="Cronometro">Cronometro</a>
+                <a href="interfazCronometro.php"  title="Cronometro">Cronometro</a>
             </nav>
         </header>
 

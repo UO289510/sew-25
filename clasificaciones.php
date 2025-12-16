@@ -40,7 +40,9 @@
 
                 $resultados = $xml->resultados;
                 
-                $html = "<section><ul>";
+                $html = "<section>";
+                $html .= "<h3>Resultados de la última carrera</h3>";
+                $html .= "<ul>";
                 $html .= "<li>Ganador: " . $resultados->ganador . "</li>";
                 $html .= "<li>Tiempo: " . $resultados->tiempo . "</li></ul></section>";
                 $html .= "<section><h3>Podio</h3><ol><li>" . $resultados->primer_puesto . "</li>";
@@ -59,7 +61,7 @@
             <a href="piloto.html" title="Información del piloto">Piloto</a>
             <a href="circuito.html" title="Información del circuito">Circuito</a>
             <a href="metereologia.html" title="Información metereologica">Metereología</a>
-            <a href="clasificaciones.php" class="active" title="Información de la temporada">Clasificaciones</a>
+            <a href="clasificaciones.php"  title="Información de la temporada">Clasificaciones</a>
             <a href="juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>
             <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
             <a href="interfazCronometro.php" title="Cronometro">Cronometro</a>

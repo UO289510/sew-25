@@ -1,61 +1,73 @@
 /* Daniel López Fernández - UO289510 */
 
+/* Especificidad 001*/
 header{
     flex:1;
     justify-content: center;
 }
 
+/* Especificidad 001*/
 nav{
     display:flex;
     align-items: center;
     gap: 1em;
 }
 
+/* Especificidad 001*/
 svg {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* Regla para pantallas de dispositivos moviles*/
 @media screen and (min-width:320px) and (max-width:799px){
-    header,
-    header h1,
-    header nav {
+    
+    header, /* Especificidad 001*/
+    header h1, /* Especificidad 002*/
+    header nav /* Especificidad 002*/
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
+    /* Especificidad 002*/
     nav a {
         display: inline-block;
         margin: 0.5em 0;
     }
 
+    /* Especificidad 012*/
     body>p:first-of-type{
         display: none;
     }
 
+    /* Especificidad 001*/
     video {
         width: 100%;
         height: auto;
     }
 
+    /* Especificidad 001*/
     audio {
         width: 90%;
         height: 5em;
     }
 
+    /* Especificidad 001*/
     img {
         width: 100%;
         height: auto;
     }
 
+    /* Especificidad 003*/
     article h2 + img {
         width: 100%;
         height: auto;
     }
 
+    /* Especificidad 002*/
     body > div {
         width: 100%;
         height: 30em;

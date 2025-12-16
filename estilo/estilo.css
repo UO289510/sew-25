@@ -9,7 +9,7 @@ body {
 }
 
 /*Especifidad 001*/
-header{
+header {
     background-color:#9c1717;
     color: rgb(0, 0, 0);
     border-radius: 100px;
@@ -17,8 +17,8 @@ header{
 }
 
 /*Especifidad 001*/
-nav{
-   color:rgb(190, 186, 186);
+nav {
+    color:rgb(190, 186, 186);
     font-size:large;
     /*background-color se hereda de header*/
 }
@@ -29,68 +29,61 @@ h1{
     /*background color se hereda de body*/
 }
 
+/* Especifidad 001*/
 a {
     color:white;
+    /*background color se hereda de body*/
 }
 
-main a:hover {
-    background-color: #9c1717;
-    color:white;
-}
-
-a:visited {
-    color:rgb(153, 153, 153);
-}
-
+/* Especifidad 012*/
 h1 a:visited{
     color:white;
+    background-color:#9c1717;
 }
 
 /* Especifidad 001*/
-nav :link{
+nav:link{
     color:white;
     /* background color se hereda de header */
 }
 
 /* Especifidad 011*/
-nav :visited{
+nav:visited{
     color:beige;
     /*background color se hereda de header */
 }
 
-a :visited{
+/* Especificidad 011*/
+a:visited{
     color: beige;
     /*background color se herad de body */
 }
 
-/* Especifidad 010*/
-nav .active{
-    color: black;
-    background-color: white;
-    font-size: x-large;
-}
-
-/* Especifidad 011*/
-p :visited{
+/* Especificidad 011*/
+p:visited{
     color:beige;
     /* background color se hereda de body */
 }
 
+/* Especificidad 001*/
 video {
     width: 100%;
     height: auto;
 }
 
+/* Especificidad 002*/
 article img {
     width: 100%;
     height: auto;
 }
 
+/* Especificidad 003*/
 section h4 + img {
     width: 100%;
     height: auto;
 }
 
+/* Especificidad 002*/
 body > div {
     width: 100%;
     max-width: 60em;

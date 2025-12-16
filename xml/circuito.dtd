@@ -33,7 +33,6 @@
 <!ATTLIST foto src CDATA #REQUIRED>
 <!ATTLIST foto alt CDATA #REQUIRED>
 <!ATTLIST video src CDATA #REQUIRED>
-<!ATTLIST video type CDATA #REQUIRED>
 
 <!ELEMENT coordenadas (salida, tramo*)>
 <!ELEMENT salida (#PCDATA)>
