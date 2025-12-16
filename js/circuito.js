@@ -70,7 +70,7 @@ class Circuito {
                         var nuevaImg = document.createElement("img");
                         
                         var srcImagen = img.src;
-                        srcImagen = srcImagen.replace("http://localhost/","");
+                        srcImagen = srcImagen.replace(/^https?:\/\/[^/]+\//,"");
                         nuevaImg.src = srcImagen;
                         nuevaImg.alt = img.alt;
                         nuevaSub.appendChild(nuevaImg);
@@ -84,7 +84,7 @@ class Circuito {
 
                         var source = video.children[0];
                         var srcVideo = source.src;
-                        srcVideo = srcVideo.replace("http://localhost/","");
+                        srcVideo = srcVideo.replace(/^https?:\/\/[^/]+\//,"");
                         source.setAttribute("src", srcVideo);
                         nuevoVideo.appendChild(source);
                         nuevaSub.appendChild(nuevoVideo);
