@@ -24,7 +24,7 @@ nav {
 }
 
 /* Especifidad 001*/
-h1{
+h1 {
     color:white;
     /*background color se hereda de body*/
 }
@@ -49,19 +49,19 @@ nav:link{
 
 /* Especifidad 011*/
 nav:visited{
-    color:beige;
+    color:rgb(138, 138, 135);
     /*background color se hereda de header */
 }
 
 /* Especificidad 011*/
 a:visited{
-    color: beige;
+    color: rgb(195, 195, 147);
     /*background color se herad de body */
 }
 
 /* Especificidad 011*/
 p:visited{
-    color:beige;
+    color:rgb(195, 195, 147);
     /* background color se hereda de body */
 }
 
