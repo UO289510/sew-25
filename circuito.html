@@ -39,8 +39,14 @@
         <section>
             <!-- TODO - Arreglar el py para cargar circuitos, corta la hora de la carrera -->
             <h2>Cargar archivos de circuito</h2>
-            <p>Cargar SVG: <input type="file" onchange="cargarSVG.leerArchivoSVG(this.files);"></p>
-            <p>Cargar KML: <input type="file" onchange="cargarKML.leerArchivoKML(this.files);"></p>
+            <p>
+                <label for="svg">Cargar SVG:</label>
+                <input type="file" id="svg" onchange="cargarSVG.leerArchivoSVG(this.files);">
+            </p>
+            <p>
+                <label for="kml">Cargar KML:</label>
+                <input type="file" id="kml" onchange="cargarKML.leerArchivoKML(this.files);">
+            </p>
         </section>
 
         <script>
