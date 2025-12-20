@@ -25,77 +25,46 @@ class Circuito {
 
             var main = document.querySelector("main");
 
-            var titulo = doc.querySelector("h2");
-            if (titulo) {
-                var nuevoTitulo = document.createElement("h2");
-                nuevoTitulo.textContent = titulo.textContent;
-                main.appendChild(nuevoTitulo);
+            var secciones = doc.querySelectorAll("main > section");
+
+            var seccionCaracteristicas = secciones[0];
+            var seccionCarrera = secciones[1];
+            var seccionReferencias = secciones[2];
+            var seccionGaleria = secciones[3];
+
+            var seccionImagenes = seccionGaleria.children[1];
+            
+            var imagenes = seccionImagenes.children;
+            for(var i=1; i<imagenes.length; i++){
+                var img = imagenes[i];
+                var src = img.getAttribute("src");
+                if(src.includes("https") || src.includes("http")){
+                    src = src.replace(/^https?:\/\/[^/]+\//,"");
+                }else{
+                    src = src.replace("../", "");
+                }
+                img.setAttribute("src", src);
             }
 
-            var secciones = doc.querySelectorAll("main > section");
-            secciones.forEach(sec => {
-                var nuevaSeccion = document.createElement("section");
-
-                var h3 = sec.querySelector("h3");
-                if (h3) {
-                    var nuevoH3 = document.createElement("h3");
-                    nuevoH3.textContent = h3.textContent;
-                    nuevaSeccion.appendChild(nuevoH3);
+            var seccionVideos = seccionGaleria.children[2];
+            var videos = seccionVideos.children;
+            for(var i=1; i<videos.length; i++){
+                var video = videos[i];
+                var source = video.children[0];
+                var src = source.src;
+                if(src.includes("https") || src.includes("http")){
+                    source.setAttribute("src", src.replace(/^https?:\/\/[^/]+\//,""));
+                }else{
+                    source.setAttribute("src", src.replace("../",""));
                 }
 
-                var ul = sec.querySelector("ul");
-                if (ul) {
-                    var nuevoUl = document.createElement("ul");
-                    ul.querySelectorAll("li").forEach(li => {
-                        var nuevoLi = document.createElement("li");
-                        nuevoLi.innerHTML = li.innerHTML;
-                        nuevoUl.appendChild(nuevoLi);
-                    });
-                    nuevaSeccion.appendChild(nuevoUl);
-                }
-
-                var subsecciones = sec.querySelectorAll("section");
-                subsecciones.forEach(sub => {
-                    var nuevaSub = document.createElement("section");
-
-                    var h4 = sub.querySelector("h4");
-                    if (h4) {
-                        var nuevoH4 = document.createElement("h4");
-                        nuevoH4.textContent = h4.textContent;
-                        nuevaSub.appendChild(nuevoH4);
-                    }
-
-                    var img = sub.querySelector("img");
-                    if (img) {
-                        var nuevaImg = document.createElement("img");
-                        
-                        var srcImagen = img.src;
-                        srcImagen = srcImagen.replace(/^https?:\/\/[^/]+\//,"");
-                        nuevaImg.src = srcImagen;
-                        nuevaImg.alt = img.alt;
-                        nuevaSub.appendChild(nuevaImg);
-                    }
-
-                    var video = sub.querySelector("video");
-                    if (video) {
-
-                        var nuevoVideo = document.createElement("video");
-                        nuevoVideo.controls = true;
-
-                        var source = video.children[0];
-                        var srcVideo = source.src;
-                        srcVideo = srcVideo.replace(/^https?:\/\/[^/]+\//,"");
-                        source.setAttribute("src", srcVideo);
-                        nuevoVideo.appendChild(source);
-                        nuevaSub.appendChild(nuevoVideo);
-                        
-                    }
-
-                    nuevaSeccion.appendChild(nuevaSub);
-                });
-
-                main.appendChild(nuevaSeccion);
-            });
+            }
+        
+            main.appendChild(seccionImagenes);
+            main.appendChild(seccionCaracteristicas);
+            main.appendChild(seccionVideos);
+            main.appendChild(seccionCarrera);
+            main.appendChild(seccionReferencias);
 
         } catch (error) {
             console.error("Error al leer el archivo:", error);

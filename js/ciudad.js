@@ -103,7 +103,11 @@ class Ciudad{
         var title = document.createElement("h3");
         title.textContent = "Pronostico metereológico para la carrera";
         section.appendChild(title);
-        
+ 
+        var dia = document.createElement("h4");
+        dia.textContent = "17 de Agosto 2025";
+        section.appendChild(dia);
+
         var lista = document.createElement("ul");
         
         var item1 = document.createElement("li");

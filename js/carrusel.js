@@ -51,7 +51,7 @@ class Carrusel {
     #mostrarFotografias(){
         
         var article = document.createElement("article");
-        var title = document.createElement("h2");
+        var title = document.createElement("h3");
         title.textContent = "Imagenes del circuito de Red Bull Ring";
         article.appendChild(title);
 

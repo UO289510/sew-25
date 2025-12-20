@@ -12,7 +12,7 @@ body {
 header {
     background-color:#9c1717;
     color: rgb(0, 0, 0);
-    border-radius: 100px;
+    width:100%;
     align-items: center;
 }
 
@@ -55,13 +55,13 @@ nav:visited{
 
 /* Especificidad 011*/
 a:visited{
-    color: rgb(195, 195, 147);
+    color: rgb(255, 255, 255);
     /*background color se herad de body */
 }
 
 /* Especificidad 011*/
 p:visited{
-    color:rgb(195, 195, 147);
+    color:rgb(255, 255, 255);
     /* background color se hereda de body */
 }
 
@@ -78,7 +78,7 @@ article img {
 }
 
 /* Especificidad 003*/
-section h4 + img {
+section h3 + img {
     width: 100%;
     height: auto;
 }
@@ -89,4 +89,22 @@ body > div {
     max-width: 60em;
     height: 40em;
     margin: 0 auto;
+}
+
+h2 {
+    width: fit-content;
+    background-color:#9c1717;
+    /* color se hereda de body */
+}
+
+h3 {
+    width: fit-content;
+    text-decoration: double underline overline;
+    text-decoration-color: #9c1717;
+}
+
+h4 {
+    width:fit-content;
+    text-decoration: underline;
+    text-decoration-color:#9c1717;
 }

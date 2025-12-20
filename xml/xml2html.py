@@ -20,7 +20,7 @@ class HTML(object):
         self.contenido +='\t\t\t<a href="../index.html" title="Index">Inicio</a>\n'
         self.contenido +='\t\t\t<a href="../piloto.html" title="Información del piloto">Piloto</a>\n'
         self.contenido +='\t\t\t<a href="../circuito.html" title="Información del circuito">Circuito</a>\n'
-        self.contenido +='\t\t\t<a href="../metereologia.html" title="Información metereologica">Metereología</a>\n'
+        self.contenido +='\t\t\t<a href="../metereologia.html" class="active" title="Información metereologica">Metereología</a>\n'
         self.contenido +='\t\t\t<a href="../clasificaciones.html" title="Información de la temporada">Clasificaciones</a>\n'
         self.contenido +='\t\t\t<a href="../juegos.html" title="Zona de juegos y entretenimiento">Juegos</a>\n'
         self.contenido +='\t\t\t<a href="../ayuda.html" title="Página de ayuda">Ayuda</a>\n\t\t</nav>\n\t</header>\n'
@@ -63,8 +63,8 @@ class HTML(object):
         print(self.contenido+"\n")
 
     def crearHTML(self):
-        self.contenido += "\t</main>\n</body>\n</html>\n"
-        with open("infoCircuito_prueba.html", "w") as html_file:
+        self.contenido += "\t\t</main>\n</body>\n</html>\n"
+        with open("infoCircuito.html", "w") as html_file:
             html_file.write(self.contenido)
             print("HTML creado correctamente")
 
@@ -77,13 +77,51 @@ class HTML(object):
         contenido = "\t\t<section>\n\t\t\t\t<h3>"+nombreSeccion+"</h3>\n\t\t\t\t<ul>\n"
         
         for datos in caracteristicas:
-            datos = datos.split(":")
-            nombre = datos[0].strip()
-            nombre = nombre[1:len(nombre)-1].capitalize()
-            valor = datos[1].strip()
-            valor = valor[1:len(valor)-1]
-            contenido+="\t\t\t\t\t<li>"+nombre+": "+valor+"</li>\n"
+            contenido += self.parseDato(datos)
         contenido+= "\t\t\t\t</ul>\n\t\t</section>\n"
+        self.addToHTML(contenido)
+        
+        
+    def cargarCarrera(self, xPath, nombreSeccion):
+        caracteristicas = self.getXPath("circuitoEsquema.xml", xPath)
+        
+        caracteristicas = caracteristicas[1:len(caracteristicas)-1]
+        caracteristicas = caracteristicas.split(",")
+        
+        contenido = "\t\t<section>\n\t\t\t\t<h3>"+nombreSeccion+"</h3>\n\t\t\t\t<ul>\n"
+        
+        contenido += self.parseDato(caracteristicas[0])
+        
+        hora = caracteristicas[1]
+        hora = hora.split("': '")
+        nombre = hora[0]
+        nombre = nombre[2:len(nombre)].capitalize()
+        valor = hora[1]
+        valor = valor[0:len(valor)-1]
+        contenido+="\t\t\t\t\t<li>"+nombre+": "+valor+"</li>\n"
+        
+        contenido += self.parseDato(caracteristicas[2])
+        contenido += self.parseDato(caracteristicas[3])
+        
+        contenido+= "\t\t\t\t</ul>\n"
+        contenido+= "\t\t\t\t<h4>Resultados de la carrera</h4>\n\t\t\t\t<ul>\n"
+        
+        ganador = self.root.find("u:resultados/u:ganador", self.ns).text
+        tiempo = self.root.find("u:resultados/u:tiempo", self.ns).text
+        primero = self.root.find("u:resultados/u:primer_puesto", self.ns).text
+        segundo = self.root.find("u:resultados/u:segundo_puesto", self.ns).text
+        tercero = self.root.find("u:resultados/u:tercer_puesto", self.ns).text
+        
+        contenido+="\t\t\t\t\t<li>Ganador: "+ganador+"</li>\n"
+        contenido+="\t\t\t\t\t<li>Tiempo: "+tiempo+"</li>\n"
+        contenido+="\t\t\t\t\t<li>Podio:\n"
+        contenido+="\t\t\t\t\t\t<ol>\n"
+        contenido+="\t\t\t\t\t\t\t<li>"+primero+"</li>\n"
+        contenido+="\t\t\t\t\t\t\t<li>"+segundo+"</li>\n"
+        contenido+="\t\t\t\t\t\t\t<li>"+tercero+"</li>\n"
+        contenido+="\t\t\t\t\t\t</ol>\n\t\t\t\t\t</li>\n"
+        contenido += "\t\t\t\t</ul>\n"
+        contenido+= "\t\t</section>\n"
         self.addToHTML(contenido)
         
     def cargarReferencias(self, xPath, nombreSeccion):
@@ -99,7 +137,7 @@ class HTML(object):
             nombre = datos['nombre']
             contenido+='\t\t\t\t\t<li>Enlace: <a href="'+valor+'">'+nombre+'</a></li>\n'
         
-        contenido+= "\t\t\t\t</ul>\n\t\t</section>\n"
+        contenido+= "\t\t\t\t</ul>\n\t\t\t</section>\n"
         self.addToHTML(contenido)
         
         
@@ -110,7 +148,7 @@ class HTML(object):
         contenido += self.cargarGaleriaImagenes("galeria/galeria_imagenes/*", "Galeria de imagenes")
         contenido += self.cargarGaleriaVideos("galeria/galeria_videos/*", "Galeria de videos")
         
-        contenido += "\t\t</section>\n"
+        contenido += "\t\t\t</section>\n"
         self.addToHTML(contenido)
         
         
@@ -120,13 +158,13 @@ class HTML(object):
         bloques = re.findall(r"\{.*?\}", imagenes);
         imagenes = [ast.literal_eval(b) for b in bloques]
              
-        contenido = "\t\t\t\t<section>\n\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
+        contenido = "\t\t\t\t<section>\n\t\t\t\t\t\t<h3>"+nombreSeccion+"</h3>\n"
          
         for datos in imagenes:
             valor = datos['src']
             nombre = datos['alt']
-            contenido+='\t\t\t\t\t<img src="../'+valor+'" alt="'+nombre+'">\n'       
-        contenido+= "\t\t\t\t</section>\n"
+            contenido+='\t\t\t\t\t\t<img src="../'+valor+'" alt="'+nombre+'">\n'       
+        contenido+= "\t\t\t\t\t</section>\n"
         return contenido
     
     def cargarGaleriaVideos(self, xPath, nombreSeccion):
@@ -135,7 +173,7 @@ class HTML(object):
         bloques = re.findall(r"\{.*?\}", videos);
         videos = [ast.literal_eval(b) for b in bloques]
              
-        contenido = "\t\t\t\t<section>\n\t\t\t\t\t<h4>"+nombreSeccion+"</h4>\n"
+        contenido = "\t\t\t\t<section>\n\t\t\t\t\t<h3>"+nombreSeccion+"</h3>\n"
         
         contenido+="\t\t\t\t\t<video controls>\n"
         for datos in videos:
@@ -146,32 +184,24 @@ class HTML(object):
             contenido+=" type='"+tipo+"; "+codecs+"'>\n"
         contenido+= "\t\t\t\t\t</video>\n\t\t\t\t</section>\n"
         return contenido
-
-    def cargarResultados(self, nombreSeccion):
-             
-        contenido = "\t\t<section>\n\t\t\t\t<h3>"+nombreSeccion+"</h3>\n\t\t\t\t<ul>\n"
-
-        ganador = self.root.find("u:resultados/u:ganador", self.ns).text
-        tiempo = self.root.find("u:resultados/u:tiempo", self.ns).text
-        primero = self.root.find("u:resultados/u:primer_puesto", self.ns).text
-        segundo = self.root.find("u:resultados/u:segundo_puesto", self.ns).text
-        tercero = self.root.find("u:resultados/u:tercer_puesto", self.ns).text
         
-        contenido+="\t\t\t\t\t<li>Ganador: "+ganador+"</li>\n"
-        contenido+="\t\t\t\t\t<li>Tiempo: "+tiempo+"</li>\n"
-        contenido+="\t\t\t\t\t<li>Primer puesto: "+primero+"</li>\n"
-        contenido+="\t\t\t\t\t<li>Segundo puesto: "+segundo+"</li>\n"
-        contenido+="\t\t\t\t\t<li>Tercer puesto: "+tercero+"</li>\n"
-        contenido+="\t\t\t\t</ul>\n\t\t</section>\n"
-        self.addToHTML(contenido);
+    def parseDato(self, dato):
+        contenido = ""
+        datos = dato.split(":")
+        nombre = datos[0].strip()
+        nombre = nombre[1:len(nombre)-1].capitalize()
+        valor = datos[1].strip()
+        valor = valor[1:len(valor)-1]
+        contenido+="\t\t\t\t\t<li>"+nombre+": "+valor+"</li>\n"
+        return contenido
+        
         
 def main():
     nuevoHTML = HTML()
     nuevoHTML.cargarCaracteristicas("caracteristicas/caracteristica", "Caracteristicas")
-    nuevoHTML.cargarCaracteristicas("carrera/infoCarrera/dato", "Carrera")
+    nuevoHTML.cargarCarrera("carrera/infoCarrera/dato", "Carrera")
     nuevoHTML.cargarReferencias("referencias/*", "Referencias")
     nuevoHTML.cargarGalerias("Galeria")
-    nuevoHTML.cargarResultados("Resultados")
     
     nuevoHTML.crearHTML()
     
