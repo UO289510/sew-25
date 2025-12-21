@@ -91,18 +91,21 @@ body > div {
     margin: 0 auto;
 }
 
+/* Especifidad 001*/
 h2 {
     width: fit-content;
     background-color:#9c1717;
     /* color se hereda de body */
 }
 
+/* Especifidad 001*/
 h3 {
     width: fit-content;
     text-decoration: double underline overline;
     text-decoration-color: #9c1717;
 }
 
+/* Especifidad 001*/
 h4 {
     width:fit-content;
     text-decoration: underline;

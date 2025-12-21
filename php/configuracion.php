@@ -128,7 +128,7 @@
                     `profesion` varchar(100) NOT NULL,
                     `edad` int(2) NOT NULL,
                     `genero` varchar(100) NOT NULL,
-                    `pericia` int(3) NOT NULL
+                    `pericia` int(3) DEFAULT 0
                 );",
                 "CREATE TABLE IF NOT EXISTS `resultados` (
                     `codigo_prueba` int(2) NOT NULL,
